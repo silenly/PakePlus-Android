@@ -1,0 +1,2862 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e8543f">
+  <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22%E5%81%A5%E8%BA%AB%E9%A5%AE%E9%A3%9F%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%8E%86%22%2C%22short_name%22%3A%22%E5%81%A5%E8%BA%AB%E6%97%A5%E5%8E%86%22%2C%22description%22%3A%22%E4%B8%AA%E4%BA%BA%E5%81%A5%E8%BA%AB%20%2F%20%E9%A5%AE%E9%A3%9F%20%2F%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E6%97%A5%E5%8E%86%22%2C%22start_url%22%3A%22.%2Ffitness-diet-study-calendar.html%22%2C%22scope%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22portrait%22%2C%22background_color%22%3A%22%23ffffff%22%2C%22theme_color%22%3A%22%23e8543f%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%2520width%253D%2522512%2522%2520height%253D%2522512%2522%2520viewBox%253D%25220%25200%2520512%2520512%2522%253E%253Crect%2520width%253D%2522512%2522%2520height%253D%2522512%2522%2520rx%253D%252296%2522%2520fill%253D%2522%2523e8543f%2522%252F%253E%253Crect%2520x%253D%2522120%2522%2520y%253D%252296%2522%2520width%253D%2522272%2522%2520height%253D%2522320%2522%2520rx%253D%252228%2522%2520fill%253D%2522%2523ffffff%2522%252F%253E%253Crect%2520x%253D%2522120%2522%2520y%253D%252296%2522%2520width%253D%2522272%2522%2520height%253D%252284%2522%2520rx%253D%252228%2522%2520fill%253D%2522%2523c33b27%2522%252F%253E%253Crect%2520x%253D%2522168%2522%2520y%253D%252266%2522%2520width%253D%252220%2522%2520height%253D%252260%2522%2520rx%253D%252210%2522%2520fill%253D%2522%2523c33b27%2522%252F%253E%253Crect%2520x%253D%2522324%2522%2520y%253D%252266%2522%2520width%253D%252220%2522%2520height%253D%252260%2522%2520rx%253D%252210%2522%2520fill%253D%2522%2523c33b27%2522%252F%253E%253Ccircle%2520cx%253D%2522186%2522%2520cy%253D%2522290%2522%2520r%253D%252222%2522%2520fill%253D%2522%2523e8543f%2522%252F%253E%253Ccircle%2520cx%253D%2522256%2522%2520cy%253D%2522290%2522%2520r%253D%252222%2522%2520fill%253D%2522%2523e8543f%2522%252F%253E%253Ccircle%2520cx%253D%2522326%2522%2520cy%253D%2522290%2522%2520r%253D%252222%2522%2520fill%253D%2522%2523e8543f%2522%252F%253E%253Crect%2520x%253D%2522190%2522%2520y%253D%2522358%2522%2520width%253D%2522132%2522%2520height%253D%252220%2522%2520rx%253D%252210%2522%2520fill%253D%2522%2523e8543f%2522%252F%253E%253C%252Fsvg%253E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%22%7D%5D%7D">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%2296%22%20fill%3D%22%23e8543f%22%2F%3E%3Crect%20x%3D%22120%22%20y%3D%2296%22%20width%3D%22272%22%20height%3D%22320%22%20rx%3D%2228%22%20fill%3D%22%23ffffff%22%2F%3E%3Crect%20x%3D%22120%22%20y%3D%2296%22%20width%3D%22272%22%20height%3D%2284%22%20rx%3D%2228%22%20fill%3D%22%23c33b27%22%2F%3E%3Crect%20x%3D%22168%22%20y%3D%2266%22%20width%3D%2220%22%20height%3D%2260%22%20rx%3D%2210%22%20fill%3D%22%23c33b27%22%2F%3E%3Crect%20x%3D%22324%22%20y%3D%2266%22%20width%3D%2220%22%20height%3D%2260%22%20rx%3D%2210%22%20fill%3D%22%23c33b27%22%2F%3E%3Ccircle%20cx%3D%22186%22%20cy%3D%22290%22%20r%3D%2222%22%20fill%3D%22%23e8543f%22%2F%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22290%22%20r%3D%2222%22%20fill%3D%22%23e8543f%22%2F%3E%3Ccircle%20cx%3D%22326%22%20cy%3D%22290%22%20r%3D%2222%22%20fill%3D%22%23e8543f%22%2F%3E%3Crect%20x%3D%22190%22%20y%3D%22358%22%20width%3D%22132%22%20height%3D%2220%22%20rx%3D%2210%22%20fill%3D%22%23e8543f%22%2F%3E%3C%2Fsvg%3E">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <meta name="theme-color" content="#e8543f">
+  <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22%E5%81%A5%E8%BA%AB%E9%A5%AE%E9%A3%9F%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%8E%86%22%2C%22short_name%22%3A%22%E5%81%A5%E8%BA%AB%E6%97%A5%E5%8E%86%22%2C%22description%22%3A%22%E4%B8%AA%E4%BA%BA%E5%81%A5%E8%BA%AB%20%2F%20%E9%A5%AE%E9%A3%9F%20%2F%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E6%97%A5%E5%8E%86%22%2C%22start_url%22%3A%22.%2Ffitness-diet-study-calendar.html%22%2C%22scope%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22portrait%22%2C%22background_color%22%3A%22%23ffffff%22%2C%22theme_color%22%3A%22%23e8543f%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%2520width%253D%2522512%2522%2520height%253D%2522512%2522%2520viewBox%253D%25220%25200%2520512%2520512%2522%253E%253Crect%2520width%253D%2522512%2522%2520height%253D%2522512%2522%2520rx%253D%252296%2522%2520fill%253D%2522%2523e8543f%2522%252F%253E%253Crect%2520x%253D%2522120%2522%2520y%253D%252296%2522%2520width%253D%2522272%2522%2520height%253D%2522320%2522%2520rx%253D%252228%2522%2520fill%253D%2522%2523ffffff%2522%252F%253E%253Crect%2520x%253D%2522120%2522%2520y%253D%252296%2522%2520width%253D%2522272%2522%2520height%253D%252284%2522%2520rx%253D%252228%2522%2520fill%253D%2522%2523c33b27%2522%252F%253E%253Crect%2520x%253D%2522168%2522%2520y%253D%252266%2522%2520width%253D%252220%2522%2520height%253D%252260%2522%2520rx%253D%252210%2522%2520fill%253D%2522%2523c33b27%2522%252F%253E%253Crect%2520x%253D%2522324%2522%2520y%253D%252266%2522%2520width%253D%252220%2522%2520height%253D%252260%2522%2520rx%253D%252210%2522%2520fill%253D%2522%2523c33b27%2522%252F%253E%253Ccircle%2520cx%253D%2522186%2522%2520cy%253D%2522290%2522%2520r%253D%252222%2522%2520fill%253D%2522%2523e8543f%2522%252F%253E%253Ccircle%2520cx%253D%2522256%2522%2520cy%253D%2522290%2522%2520r%253D%252222%2522%2520fill%253D%2522%2523e8543f%2522%252F%253E%253Ccircle%2520cx%253D%2522326%2522%2520cy%253D%2522290%2522%2520r%253D%252222%2522%2520fill%253D%2522%2523e8543f%2522%252F%253E%253Crect%2520x%253D%2522190%2522%2520y%253D%2522358%2522%2520width%253D%2522132%2522%2520height%253D%252220%2522%2520rx%253D%252210%2522%2520fill%253D%2522%2523e8543f%2522%252F%253E%253C%252Fsvg%253E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%22%7D%5D%7D">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%2296%22%20fill%3D%22%23e8543f%22%2F%3E%3Crect%20x%3D%22120%22%20y%3D%2296%22%20width%3D%22272%22%20height%3D%22320%22%20rx%3D%2228%22%20fill%3D%22%23ffffff%22%2F%3E%3Crect%20x%3D%22120%22%20y%3D%2296%22%20width%3D%22272%22%20height%3D%2284%22%20rx%3D%2228%22%20fill%3D%22%23c33b27%22%2F%3E%3Crect%20x%3D%22168%22%20y%3D%2266%22%20width%3D%2220%22%20height%3D%2260%22%20rx%3D%2210%22%20fill%3D%22%23c33b27%22%2F%3E%3Crect%20x%3D%22324%22%20y%3D%2266%22%20width%3D%2220%22%20height%3D%2260%22%20rx%3D%2210%22%20fill%3D%22%23c33b27%22%2F%3E%3Ccircle%20cx%3D%22186%22%20cy%3D%22290%22%20r%3D%2222%22%20fill%3D%22%23e8543f%22%2F%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22290%22%20r%3D%2222%22%20fill%3D%22%23e8543f%22%2F%3E%3Ccircle%20cx%3D%22326%22%20cy%3D%22290%22%20r%3D%2222%22%20fill%3D%22%23e8543f%22%2F%3E%3Crect%20x%3D%22190%22%20y%3D%22358%22%20width%3D%22132%22%20height%3D%2220%22%20rx%3D%2210%22%20fill%3D%22%23e8543f%22%2F%3E%3C%2Fsvg%3E">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="mobile-web-app-capable" content="yes">
+
+<title>健身 · 饮食 · 学习 记录日历</title>
+<style>
+/* ============ 基础与主题变量 ============ */
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+/* hidden 属性优先级兜底：避免被组件自身的 display 规则覆盖 */
+[hidden]{display:none !important}
+html,body{margin:0;padding:0}
+:root{
+  --accent:#FF7A45;          /* 主题色（跟随模式变化） */
+  --accent-dark:#E85F2A;
+  --accent-soft:#FFF2EC;
+  --bg:#F5F6F8;
+  --card:#FFFFFF;
+  --text:#333842;
+  --muted:#8A909B;
+  --line:#E9ECF1;
+  --radius:14px;
+  --shadow:0 2px 10px rgba(20,25,35,.06);
+  --shadow-lg:0 8px 30px rgba(20,25,35,.12);
+}
+body[data-mode="fitness"]{--accent:#FF7A45;--accent-dark:#E85F2A;--accent-soft:#FFF2EC}
+body[data-mode="diet"]   {--accent:#E8604C;--accent-dark:#CE4A38;--accent-soft:#FDEDEA}
+body[data-mode="study"]  {--accent:#3B7DD8;--accent-dark:#2C65B3;--accent-soft:#EAF1FC}
+body[data-mode="period"] {--accent:#E2578C;--accent-dark:#C63F73;--accent-soft:#FDECF3}
+
+body{
+  background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  font-size:14px;line-height:1.5;overflow-x:hidden;
+  transition:background .3s ease;
+}
+h1,h2,h3,h4{margin:0;font-weight:600}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;font-size:inherit}
+input,textarea,select{font-family:inherit;font-size:inherit;color:inherit}
+
+.app{max-width:1360px;margin:0 auto;padding:16px 16px 60px}
+
+/* ============ 顶栏 ============ */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.logo{width:26px;height:26px;border-radius:8px;background:var(--accent);flex:none;
+  box-shadow:0 0 0 4px var(--accent-soft);transition:background .3s ease,box-shadow .3s ease}
+.brand h1{font-size:18px;letter-spacing:.3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top-actions{display:flex;gap:8px;flex-wrap:wrap}
+
+/* ============ 通用按钮 ============ */
+.btn{
+  padding:7px 14px;border-radius:10px;background:var(--card);color:var(--text);
+  border:1px solid var(--line);font-size:13px;font-weight:500;
+  transition:all .18s cubic-bezier(.34,1.56,.64,1);white-space:nowrap;
+}
+.btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.btn:active{transform:translateY(0) scale(.97)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.primary:hover{background:var(--accent-dark);color:#fff;filter:brightness(1.03)}
+.btn.sm{padding:4px 10px;font-size:12px;border-radius:8px}
+.btn.danger{color:#D9534F;border-color:#F3D6D5}
+.btn.danger:hover{background:#D9534F;color:#fff;border-color:#D9534F}
+.btn.icon{padding:6px 9px;font-size:15px;line-height:1}
+
+/* ============ 卡片 ============ */
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.02)}
+
+/* ============ 主布局 ============ */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:14px;align-items:start}
+@media(max-width:1200px){.layout{grid-template-columns:minmax(0,1fr) 180px}}
+@media(max-width:768px){.layout{grid-template-columns:1fr;gap:10px}}
+
+/* ============ 日历卡 ============ */
+.cal-card{padding:14px;min-width:0}
+.cal-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.seg{display:inline-flex;background:var(--bg);border-radius:10px;padding:3px;flex:none}
+.seg button{padding:5px 14px;border-radius:8px;font-size:13px;color:var(--muted);font-weight:500;transition:all .2s ease}
+.seg button.on{background:var(--card);color:var(--accent);box-shadow:0 1px 4px rgba(0,0,0,.08);font-weight:600}
+.cal-title{font-size:16px;font-weight:600;flex:1;min-width:90px}
+.cal-nav{display:flex;gap:6px;flex:none}
+.cal-nav button{width:30px;height:30px;border-radius:9px;background:var(--bg);color:var(--text);
+  font-size:17px;line-height:1;display:flex;align-items:center;justify-content:center;transition:all .18s ease}
+.cal-nav button:hover{background:var(--accent);color:#fff;transform:scale(1.06)}
+
+/* ---- 月视图 ---- */
+.week-head{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:6px}
+.week-head div{text-align:center;font-size:12px;color:var(--muted);padding:2px 0;font-weight:500}
+.month-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cell{
+  position:relative;min-height:76px;border-radius:10px;border:1px solid var(--line);
+  padding:5px 5px 4px;background:#fff;cursor:pointer;overflow:hidden;
+  transition:transform .18s cubic-bezier(.34,1.56,.64,1),box-shadow .18s ease,border-color .18s ease;
+}
+.cell:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--accent)}
+.cell.other{opacity:.4}
+.cell.today{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.cell.sel{background:var(--accent-soft);border-color:var(--accent)}
+.cell.has::after{content:"";position:absolute;top:6px;right:6px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.c-num{font-size:13px;font-weight:600;color:var(--text);line-height:1.2}
+.cell.today .c-num{color:var(--accent)}
+.c-sum{margin-top:3px;font-size:10.5px;line-height:1.35;color:var(--accent-dark);word-break:break-all}
+.c-sum.empty{color:var(--muted)}
+
+/* ---- 年视图 ---- */
+.year-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:900px){.year-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.year-grid{grid-template-columns:repeat(2,1fr)}}
+.ycard{border:1px solid var(--line);border-radius:12px;padding:9px;background:#fff;cursor:pointer;transition:all .18s ease}
+.ycard:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--accent)}
+.ycard.cur{border-color:var(--accent);background:var(--accent-soft)}
+.y-title{font-size:13px;font-weight:600;margin-bottom:2px}
+.y-count{font-size:11px;color:var(--muted);margin-bottom:6px}
+.dots{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.dots i{width:100%;aspect-ratio:1;border-radius:50%;background:transparent}
+.dots i.on{background:var(--accent)}
+.dots i.pad{background:transparent}
+
+/* ---- 日视图 hero ---- */
+.day-hero{display:flex;align-items:center;gap:14px;padding:14px;border-radius:12px;background:var(--accent-soft);flex-wrap:wrap}
+.dh-date{font-size:38px;font-weight:700;color:var(--accent);line-height:1;min-width:56px}
+.dh-info{font-size:13px;color:var(--text)}
+.dh-sum{margin-top:3px;font-size:12.5px;color:var(--accent-dark);font-weight:500}
+
+/* ============ 右侧模式栏 ============ */
+.mode-col{display:flex;flex-direction:column;gap:12px;min-width:0}
+@media(max-width:768px){.mode-col{order:-1}}
+.mode-card{padding:12px}
+.mode-title{font-size:12px;color:var(--muted);margin-bottom:8px;font-weight:500}
+.mode-btns{display:flex;flex-direction:column;gap:7px}
+.mode-btns button{
+  display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:10px;
+  background:var(--bg);font-size:13.5px;font-weight:500;transition:all .2s cubic-bezier(.34,1.56,.64,1);
+}
+.mode-btns button i{width:8px;height:8px;border-radius:50%;background:var(--line);flex:none;transition:background .2s}
+.mode-btns button[data-mode="fitness"] i{background:#FF7A45}
+.mode-btns button[data-mode="diet"] i{background:#E8604C}
+.mode-btns button[data-mode="study"] i{background:#3B7DD8}
+.mode-btns button[data-mode="period"] i{background:#E2578C}
+.mode-btns button:hover{transform:translateX(2px)}
+.mode-btns button.on{background:var(--accent);color:#fff;box-shadow:0 3px 10px rgba(0,0,0,.12)}
+.mode-btns button.on i{background:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.5)}
+@media(max-width:768px){
+  .mode-btns{flex-direction:row}
+  .mode-btns button{flex:1;justify-content:center}
+}
+.legend{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:11.5px;color:var(--muted);line-height:1.7}
+.legend b{color:var(--accent);font-weight:600}
+.stat-card{padding:12px}
+.stat-title{font-size:12px;color:var(--muted);margin-bottom:8px;font-weight:500}
+.stat-row{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;padding:3px 0}
+.stat-row b{font-size:15px;color:var(--accent);font-weight:600}
+
+/* ============ 详情面板 ============ */
+.detail-card{margin-top:14px;padding:14px;min-width:0}
+.d-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.d-title{font-size:16px;font-weight:600}
+.d-title small{font-size:12px;color:var(--muted);font-weight:400;margin-left:6px}
+.sum-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:14px}
+.sum{border-radius:12px;background:var(--accent-soft);padding:10px 12px;border:1px solid rgba(0,0,0,.02)}
+.sum .k{font-size:11.5px;color:var(--muted)}
+.sum .v{font-size:20px;font-weight:700;color:var(--accent);line-height:1.25}
+.sum .v span{font-size:12px;font-weight:500;margin-left:2px}
+/* 营养目标：实际 / 目标 配色 */
+.sum .v .now.ok{color:#2FA84F}
+.sum .v .now.over{color:#E8453C}
+.sum .v .goal{color:var(--muted);font-weight:500}
+.sum.hl{box-shadow:0 0 0 2px var(--accent) inset}
+.gear{border:none;background:none;padding:0 3px;font-size:11px;color:var(--muted);opacity:.65;line-height:1}
+.gear:hover{opacity:1;color:var(--accent)}
+/* 复制昨日 */
+.copy-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px;padding:9px 11px;
+  border-radius:10px;background:#FAFBFC;border:1px dashed var(--line)}
+.copy-row span{font-size:12px;color:var(--muted)}
+/* 收藏夹 */
+.fav-box{border:1px dashed var(--line);border-radius:10px;padding:9px 10px;background:#FAFBFC}
+.fav-t{font-size:11.5px;color:var(--muted);margin-bottom:6px}
+.fav-tags{display:flex;flex-wrap:wrap;gap:6px}
+.fav-tag{display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:20px;background:#fff;
+  border:1px solid var(--line);font-size:12px;cursor:pointer;transition:all .18s ease}
+.fav-tag:hover{border-color:var(--accent);color:var(--accent)}
+.fav-tag b{font-weight:400;color:var(--muted);font-size:13px;line-height:1}
+.fav-tag b:hover{color:#D9534F}
+.fav-star{margin-top:-4px}
+.fav-row{display:flex;gap:8px;flex-wrap:wrap}
+/* 有氧未完成：置灰，仅展示不计入汇总 */
+.cardio-item.pending{opacity:.62;background:#F7F8FA}
+.cardio-item.pending .item-name{color:var(--muted)}
+/* 无氧状态徽标：未开始 / 进行中 / 已完成 */
+.st-badge.todo{background:#EEEFF1;color:#8A9099;border-color:#E3E5E8}
+.st-badge.doing{background:#FFF4E6;color:#C77800;border-color:#FFD9A0}
+.st-badge.done{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+/* 体重曲线周期色带图例 */
+.chart-legend{display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:11.5px;color:var(--muted);margin-top:2px}
+.chart-legend i{width:10px;height:10px;border-radius:3px;display:inline-block;margin-right:4px;vertical-align:-1px}
+
+.block{margin-top:14px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.block-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;background:#FAFBFC;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.block-head h3{font-size:14px}
+.block-body{padding:10px 12px}
+.items{display:flex;flex-direction:column;gap:8px}
+.item{display:flex;align-items:flex-start;gap:10px;padding:9px 11px;border-radius:10px;background:#FAFBFC;border:1px solid var(--line);transition:all .18s ease}
+.item:hover{border-color:var(--accent);background:#fff}
+.item-main{flex:1;min-width:0}
+.item-name{font-size:13.5px;font-weight:600;word-break:break-all}
+.item-meta{margin-top:3px;font-size:11.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 12px}
+.item-meta em{font-style:normal;color:var(--accent-dark);font-weight:500}
+.item-note{margin-top:4px;font-size:12px;color:var(--muted);word-break:break-all;white-space:pre-wrap}
+.item-ops{display:flex;gap:6px;flex:none}
+.empty-tip{padding:16px 12px;text-align:center;color:var(--muted);font-size:12.5px}
+
+/* ---- 训练部位多选标签 ---- */
+.parts-chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{padding:5px 13px;border-radius:20px;border:1px solid var(--line);background:#fff;font-size:12.5px;color:var(--muted);
+  transition:all .18s cubic-bezier(.34,1.56,.64,1)}
+.chip:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,.10)}
+
+/* ---- 无氧条目：组间追踪器 ---- */
+.st-item.finished{background:var(--accent-soft);border-color:var(--accent)}
+.st-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.st-badge{font-size:11px;font-weight:600;color:var(--accent);background:#fff;border:1px solid var(--accent);
+  border-radius:20px;padding:1px 8px;white-space:nowrap}
+.st-bar{height:6px;border-radius:6px;background:#EDEFF3;margin-top:8px;overflow:hidden}
+.st-bar i{display:block;height:100%;width:0;border-radius:6px;background:var(--accent);transition:width .18s linear}
+.st-bar.rest i{background:#E8A33D}
+.st-ops{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+.st-btn{min-width:124px;justify-content:center}
+.st-item.resting{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.st-item.flash{animation:stflash .45s ease 3}
+@keyframes stflash{0%,100%{background:#fff}50%{background:var(--accent-soft)}}
+.st-progress{font-size:11.5px;color:var(--muted);margin-top:6px}
+.st-progress em{font-style:normal;color:var(--accent);font-weight:600}
+
+/* ---- 月视图部位标签 ---- */
+.c-parts{display:flex;flex-wrap:wrap;gap:2px;margin-top:3px;align-items:center}
+.c-parts span{font-size:9px;line-height:1.55;padding:0 4px;border-radius:4px;background:var(--accent-soft);color:var(--accent-dark);white-space:nowrap}
+.c-parts b{font-size:9px;color:var(--muted);font-weight:600;white-space:nowrap}
+
+/* ---- 年视图部位统计 ---- */
+.y-parts{margin-top:6px;display:flex;flex-wrap:wrap;gap:3px}
+.y-parts span{font-size:10px;line-height:1.6;padding:0 5px;border-radius:4px;background:var(--accent-soft);color:var(--accent-dark)}
+
+/* ---- 经期模式：阶段配色 ---- */
+.cell.ph-period    {background:#FDECEE;border-color:#F3BFC5}
+.cell.ph-follicular{background:#EAF7EE;border-color:#B9E2C6}
+.cell.ph-ovulation {background:#F3EBFC;border-color:#CDB2EE}
+.cell.ph-luteal    {background:#FEF4E4;border-color:#F0D6A4}
+.cell.ph-predicted {border:1px dashed #E8453C !important;background:#FDECEE}
+/* 提高优先级：阶段底色不掩盖「今天 / 选中」的边框提示 */
+.month-grid .cell.today{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.month-grid .cell.sel{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.c-phase{display:flex;align-items:center;gap:3px;margin-top:3px}
+.c-phase i{width:6px;height:6px;border-radius:50%;flex:none}
+.c-phase span{font-size:9px;line-height:1.5;color:var(--text);white-space:nowrap}
+.c-phase i.period{background:#E8453C}
+.c-phase i.follicular{background:#2FA84F}
+.c-phase i.ovulation{background:#A05CD6}
+.c-phase i.luteal{background:#F5A623}
+/* 月视图顶部的阶段横幅 */
+.period-banner{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:11px 13px;border-radius:12px;
+  background:var(--accent-soft);border:1px solid rgba(0,0,0,.03);margin-bottom:10px}
+.pb-dot{width:12px;height:12px;border-radius:50%;flex:none}
+.pb-main{font-size:14px;font-weight:600}
+.pb-sub{font-size:12px;color:var(--muted);margin-top:2px}
+.pb-day{font-size:26px;font-weight:700;color:var(--accent);line-height:1}
+.pb-day small{font-size:11px;font-weight:500;color:var(--muted)}
+/* 阶段小贴士卡片 */
+.tip-card{display:flex;gap:11px;padding:12px;border-radius:12px;border:1px solid var(--line);background:#fff;margin-top:10px}
+.tip-icon{width:38px;height:38px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:19px}
+.tip-body{min-width:0}
+.tip-title{font-size:13.5px;font-weight:600;margin-bottom:3px}
+.tip-text{font-size:12.5px;color:var(--muted);line-height:1.65}
+/* 经期参数行 */
+.prow{display:flex;gap:14px;flex-wrap:wrap}
+.prow label{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted)}
+.prow input{width:78px;padding:6px 9px;border:1px solid var(--line);border-radius:9px;background:#fff;outline:none}
+.prow input:focus{border-color:var(--accent)}
+.p-rec{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 11px;border-radius:10px;
+  background:#FAFBFC;border:1px solid var(--line);margin-bottom:8px;flex-wrap:wrap}
+.p-rec b{font-size:14px}
+.p-rec span{font-size:12px;color:var(--muted)}
+
+/* ---- 饮水记录 ---- */
+.water-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.water-num{line-height:1;white-space:nowrap}
+.water-num b{font-size:34px;font-weight:700;color:#2E90D6}
+.water-num span{font-size:13px;color:var(--muted);margin-left:3px}
+.wbar{height:10px;border-radius:10px;background:#EDEFF3;overflow:hidden}
+.wbar i{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,#5FB3EC,#2E90D6);transition:width .35s ease}
+.water-pct{margin-top:5px;font-size:11.5px;color:var(--muted)}
+.water-ops{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.water-ops input{padding:6px 10px;border:1px solid var(--line);border-radius:9px;background:#fff;outline:none;width:120px}
+.water-ops input:focus{border-color:#2E90D6}
+.c-water{font-size:9px;color:#2E90D6;margin-top:2px}
+
+/* ---- 体重 ---- */
+.wrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.wrow input{padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:#fff;outline:none;width:130px}
+.wrow input:focus{border-color:var(--accent)}
+.chart-wrap{position:relative;width:100%;height:230px;margin-top:10px}
+.chart-wrap canvas{display:block;width:100%}
+.w-list{margin-top:10px;max-height:190px;overflow-y:auto;border-radius:10px;border:1px solid var(--line)}
+.w-item{display:flex;align-items:center;justify-content:space-between;padding:7px 11px;border-bottom:1px solid var(--line);font-size:12.5px}
+.w-item:last-child{border-bottom:none}
+.w-item b{font-size:14px;color:var(--accent)}
+.chart-tip{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+.seg-sm{display:inline-flex;background:var(--bg);border-radius:9px;padding:3px}
+.seg-sm button{padding:4px 11px;border-radius:7px;font-size:12px;color:var(--muted)}
+.seg-sm button.on{background:#fff;color:var(--accent);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+
+/* ============ Toast ============ */
+.toast-box{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:9999;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none}
+.toast{
+  padding:9px 18px;border-radius:11px;background:rgba(45,52,62,.94);color:#fff;font-size:13px;
+  box-shadow:var(--shadow-lg);animation:tin .32s cubic-bezier(.34,1.56,.64,1);max-width:80vw;text-align:center;
+}
+.toast.ok{background:var(--accent)}
+.toast.warn{background:#E8A33D}
+.toast.err{background:#D9534F}
+.toast.out{animation:tout .3s ease forwards}
+@keyframes tin{from{opacity:0;transform:translateY(-14px) scale(.9)}to{opacity:1;transform:none}}
+@keyframes tout{to{opacity:0;transform:translateY(-10px) scale(.95)}}
+
+/* ============ 模态框 ============ */
+.modal-mask{position:fixed;inset:0;background:rgba(25,30,38,.42);z-index:9000;display:flex;align-items:center;justify-content:center;padding:16px;animation:mfade .2s ease}
+@keyframes mfade{from{opacity:0}to{opacity:1}}
+.modal{background:#fff;border-radius:16px;width:100%;max-width:420px;max-height:86vh;display:flex;flex-direction:column;box-shadow:var(--shadow-lg);animation:mpop .3s cubic-bezier(.34,1.56,.64,1)}
+@keyframes mpop{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:none}}
+.modal-title{padding:15px 18px 4px;font-size:16px;font-weight:600}
+.modal-body{padding:8px 18px 14px;overflow-y:auto;display:flex;flex-direction:column;gap:10px}
+.modal-foot{padding:12px 18px 16px;display:flex;gap:9px;justify-content:flex-end}
+.fld{display:flex;flex-direction:column;gap:5px}
+.fld span{font-size:12px;color:var(--muted);font-weight:500}
+.fld input,.fld textarea,.fld select{
+  padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:#FAFBFC;outline:none;
+  transition:border-color .18s ease,background .18s ease;width:100%;
+}
+.fld input:focus,.fld textarea:focus{border-color:var(--accent);background:#fff}
+.fld textarea{resize:vertical;min-height:62px}
+.fld-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.modal-msg{font-size:13.5px;color:var(--text);padding:6px 18px 12px;line-height:1.6}
+/* 训练计划 导出/导入 弹窗 */
+.plan-modal .row2{display:flex;align-items:center;gap:10px}
+.plan-modal .row2 label{width:48px;flex:none;font-size:13px;color:var(--muted)}
+.plan-modal .row2 input[type=date]{flex:1;padding:7px 9px;border:1px solid var(--line);border-radius:9px;font-size:13px;outline:none}
+.plan-modal .row2 input[type=date]:focus{border-color:var(--accent)}
+.plan-modal .hint{font-size:12px;color:var(--muted);line-height:1.6;background:var(--bg);border-radius:8px;padding:8px 10px}
+.plan-json{width:100%;min-height:180px;max-height:46vh;margin-top:8px;border:1px solid var(--line);border-radius:9px;
+  padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;line-height:1.5;color:var(--text);
+  background:#fff;resize:vertical;white-space:pre;overflow:auto}
+.plan-json[readonly]{background:#fbfdff}
+.modal-actions{display:flex;gap:9px;flex-wrap:wrap}
+.modal-msg-inline{font-size:13.5px;color:var(--text);line-height:1.7;background:var(--bg);border-radius:9px;padding:10px 12px;border:1px solid var(--line)}
+
+@media(max-width:768px){
+  .app{padding:12px 10px 50px}
+  .brand h1{font-size:16px}
+  .cell{min-height:54px;padding:3px}
+  .c-num{font-size:12px}
+  .c-sum{font-size:9.5px;margin-top:2px}
+  .week-head div{font-size:11px}
+  .dh-date{font-size:30px}
+  .modal-foot{padding-bottom:calc(16px + env(safe-area-inset-bottom))}
+  .item{flex-wrap:wrap}
+  .item-ops{width:100%;justify-content:flex-end}
+  .st-btn{min-width:100%;flex:1}
+  .c-parts span,.c-parts b{font-size:8.5px}
+  /* 手机端营养卡片要同时放下「实际 / 目标」，数字略缩 */
+  .sum .v{font-size:17px}
+  .sum .v span{font-size:11px}
+  .sum-cards{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+}
+</style>
+</head>
+<body data-mode="fitness">
+
+<div class="app">
+  <!-- ===== 顶栏 ===== -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo"></span>
+      <h1>健身 · 饮食 · 学习 记录日历</h1>
+    </div>
+    <div class="top-actions">
+      <button class="btn" id="btnToday">回到今天</button>
+      <button class="btn" id="btnExport">导出备份</button>
+      <button class="btn" id="btnImport">导入备份</button>
+      <button class="btn" id="btnExportPlan">导出计划</button>
+      <button class="btn" id="btnImportPlan">导入计划</button>
+      <button class="btn" id="btnSettings">设置</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- ===== 日历主区 ===== -->
+    <section class="card cal-card">
+      <div class="cal-head">
+        <div class="seg" id="viewSeg">
+          <button data-view="year">年</button>
+          <button data-view="month" class="on">月</button>
+          <button data-view="day">日</button>
+        </div>
+        <div class="cal-title" id="calTitle"></div>
+        <div class="cal-nav">
+          <button id="prevBtn" title="上一个">‹</button>
+          <button id="nextBtn" title="下一个">›</button>
+        </div>
+      </div>
+      <div id="viewBox"></div>
+    </section>
+
+    <!-- ===== 右侧模式切换 ===== -->
+    <aside class="mode-col">
+      <div class="card mode-card">
+        <div class="mode-title">记录模式</div>
+        <div class="mode-btns" id="modeBtns">
+          <button data-mode="fitness" class="on"><i></i>健身</button>
+          <button data-mode="diet"><i></i>饮食</button>
+          <button data-mode="study"><i></i>学习</button>
+          <button data-mode="period"><i></i>经期</button>
+        </div>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div class="card stat-card" id="monthStat"></div>
+      <div class="card stat-card" id="weekStat"></div>
+    </aside>
+  </div>
+
+  <!-- ===== 当日详情 ===== -->
+  <section class="card detail-card" id="detailBox"></section>
+</div>
+
+<div class="toast-box" id="toastBox"></div>
+<div class="modal-mask" id="modalMask" hidden>
+  <div class="modal">
+    <div class="modal-title" id="modalTitle"></div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-msg" id="modalMsg" hidden></div>
+    <div class="modal-foot">
+      <button class="btn" id="modalCancel">取消</button>
+      <button class="btn primary" id="modalOk">保存</button>
+    </div>
+  </div>
+</div>
+<input type="file" id="fileInput" accept=".json,application/json" hidden>
+
+<script>
+/* =====================================================================
+ *  个人健身 / 饮食 / 学习 记录日历   ——  纯原生实现，无外部依赖
+ *  数据结构（localStorage 单键存储）：
+ *  {
+ *    fitness:{ 'YYYY-MM-DD': { strength:[...], cardio:[...] } },
+ *    diet:   { 'YYYY-MM-DD': { breakfast:[...], lunch:[...], dinner:[...], snack:[...] } },
+ *    study:  { 'YYYY-MM-DD': { items:[...] } },
+ *    weights:[ { date:'YYYY-MM-DD', kg:65.5 } ],
+ *    settings:{ restSeconds:60, chartRange:'all' }
+ *  }
+ * ===================================================================== */
+
+/* ---------------------- 常量 ---------------------- */
+var KEY = 'fdsc_data_v1';
+var MODES = {
+  fitness:{ name:'健身', unit:'训练' },
+  diet:{ name:'饮食', unit:'餐饮' },
+  study:{ name:'学习', unit:'学习' },
+  period:{ name:'经期', unit:'周期' }
+};
+/* 经期阶段：文案 / 颜色 / 锻炼小贴士 */
+var PHASE_LABEL = { period:'经期', follicular:'卵泡期', ovulation:'排卵期', luteal:'黄体期' };
+var PHASE_SHORT = { period:'经期', follicular:'卵泡', ovulation:'易孕', luteal:'黄体' };
+var PHASE_COLOR = { period:'#E8453C', follicular:'#2FA84F', ovulation:'#A05CD6', luteal:'#F5A623' };
+var PERIOD_TIPS = {
+  period:{ icon:'🩸', title:'经期', color:'#E8453C',
+    text:'避免高强度腹部训练、倒立、剧烈跳跃和大重量下肢。适合散步、瑜伽、轻度拉伸；力量训练建议降重量、减组数。' },
+  follicular:{ icon:'🌱', title:'卵泡期', color:'#2FA84F',
+    text:'雌激素上升，体能和恢复力处于最佳。适合力量训练冲重量、高强度间歇，是突破 PR 的窗口期。' },
+  ovulation:{ icon:'🥚', title:'排卵期（易孕期）', color:'#A05CD6',
+    text:'体能高峰，适合高强度训练与竞速类运动；注意关节防护，别忽视热身。' },
+  luteal:{ icon:'🌙', title:'黄体期', color:'#F5A623',
+    text:'黄体早期可正常训练；经前一周体能下降、易疲劳、情绪波动大，以中等强度为主，不要硬冲重量，注意睡眠和保暖。' },
+  upcoming:{ icon:'⏳', title:'预测经期临近', color:'#E8453C',
+    text:'减少高强度训练，多做拉伸放松，保证睡眠，身体需要更多恢复。' }
+};
+var MEALS = [
+  { key:'breakfast', name:'早餐' },
+  { key:'lunch',     name:'午餐' },
+  { key:'dinner',    name:'晚餐' },
+  { key:'snack',     name:'加餐' }
+];
+var WEEK = ['日','一','二','三','四','五','六'];
+/* 可多选的训练部位 */
+var PARTS = ['胸','背','肩','腿','手臂','核心','有氧','臀'];
+
+/* ---------------------- 运行状态 ---------------------- */
+var data = loadData();
+var mode = 'fitness';     // 当前模式
+var view = 'month';       // year | month | day
+var cursor = new Date();  // 日历当前导航位置（年/月/日复用）
+var selected = today();   // 选中日期
+
+/* ---------------------- 通用工具 ---------------------- */
+function $(id){ return document.getElementById(id); }
+function esc(s){
+  return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+    return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c];
+  });
+}
+function pad2(n){ return (n < 10 ? '0' : '') + n; }
+function ymd(d){ return d.getFullYear() + '-' + pad2(d.getMonth()+1) + '-' + pad2(d.getDate()); }
+function parseYmd(s){ var p = String(s).split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }
+function today(){ var d = new Date(); d.setHours(0,0,0,0); return d; }
+function sameDay(a,b){ return ymd(a) === ymd(b); }
+function num(v){ var n = parseFloat(v); return isNaN(n) ? 0 : n; }
+function uid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+function clone(o){ return JSON.parse(JSON.stringify(o)); }
+function addDays(d, n){ var x = new Date(d.getTime()); x.setDate(x.getDate()+n); return x; }
+function addMonths(d, n){ var x = new Date(d.getFullYear(), d.getMonth()+n, 1); return x; }
+
+/* toast 提示（不使用 alert） */
+function toast(msg, type){
+  var box = $('toastBox');
+  var el = document.createElement('div');
+  el.className = 'toast' + (type ? ' ' + type : '');
+  el.textContent = msg;
+  box.appendChild(el);
+  setTimeout(function(){
+    el.classList.add('out');
+    setTimeout(function(){ if(el.parentNode) el.parentNode.removeChild(el); }, 320);
+  }, 1900);
+}
+
+/* ---------------------- 数据存取 ---------------------- */
+function defaultData(){
+  return {
+    fitness:{}, diet:{}, study:{},
+    period:{ records:[], settings:{ cycleLen:28, periodLen:5 } },
+    water:{},                                   // { 'YYYY-MM-DD': 饮水ml }
+    favFoods:[],                                // 常用食物模板
+    favExercises:[],                            // 常用无氧动作模板
+    favCardio:[],                               // 常用有氧项目模板
+    weights:[],
+    settings:{
+      restSeconds:60, chartRange:'all', waterGoal:2000,
+      goals:{ kcal:1500, carb:150, fat:50, protein:100 }   // 每日营养目标
+    }
+  };
+}
+function loadData(){
+  try{
+    var raw = localStorage.getItem(KEY);
+    if(!raw) return defaultData();
+    var d = JSON.parse(raw);
+    var base = defaultData();
+    var out = {
+      fitness: d.fitness || base.fitness,
+      diet:    d.diet    || base.diet,
+      study:   d.study   || base.study,
+      period: {
+        records: (d.period && Array.isArray(d.period.records)) ? d.period.records : [],
+        settings: Object.assign(base.period.settings, (d.period && d.period.settings) || {})
+      },
+      water: (d.water && typeof d.water === 'object') ? d.water : {},
+      favFoods: Array.isArray(d.favFoods) ? d.favFoods : [],
+      favExercises: Array.isArray(d.favExercises) ? d.favExercises : [],
+      favCardio: Array.isArray(d.favCardio) ? d.favCardio : [],
+      weights: Array.isArray(d.weights) ? d.weights : [],
+      settings: Object.assign(base.settings, d.settings || {})
+    };
+    // 目标值做一次兜底合并，避免旧备份缺字段
+    out.settings.goals = Object.assign(base.settings.goals, (d.settings && d.settings.goals) || {});
+    // 旧数据有氧记录没有 done 字段 → 按「已完成」补齐（旧版有氧一添加即完成），新添加默认 done=0
+    Object.keys(out.fitness || {}).forEach(function(ds){
+      var day = out.fitness[ds]; if(!day) return;
+      (day.cardio || []).forEach(function(it){ if(it.done === undefined) it.done = 1; });
+    });
+    return out;
+  }catch(e){
+    console.warn('数据读取失败，使用默认空数据', e);
+    return defaultData();
+  }
+}
+function save(){
+  try{
+    localStorage.setItem(KEY, JSON.stringify(data));
+  }catch(e){
+    toast('本地存储失败，可能空间不足', 'err');
+  }
+}
+
+/* 获取某天某模式的记录（不存在返回空结构，不写入存储） */
+function getDay(m, ds){
+  var d = data[m] && data[m][ds];
+  if(m === 'fitness') return d || { strength:[], cardio:[], parts:[] };
+  if(m === 'diet'){
+    d = d || {};
+    var o = {};
+    for(var i=0;i<MEALS.length;i++) o[MEALS[i].key] = d[MEALS[i].key] || [];
+    return o;
+  }
+  if(m === 'period') return { records: (data.period && data.period.records) || [] };
+  return { items: (d && d.items) || [] };
+}
+/* 确保某天记录对象存在（写入时用） */
+function ensureDay(m, ds){
+  if(!data[m]) data[m] = {};
+  if(!data[m][ds]){
+    if(m === 'fitness') data[m][ds] = { strength:[], cardio:[], parts:[] };
+    else if(m === 'diet') data[m][ds] = { breakfast:[], lunch:[], dinner:[], snack:[] };
+    else data[m][ds] = { items:[] };
+  }
+  return data[m][ds];
+}
+/* 清理空的日期记录，避免数据膨胀与误判 */
+function cleanupDay(m, ds){
+  var d = data[m] && data[m][ds];
+  if(!d) return;
+  var empty = false;
+  if(m === 'period') return;                 // 经期记录是全局列表，不做单日清理
+  if(m === 'fitness') empty = (d.strength||[]).length === 0 && (d.cardio||[]).length === 0 && (d.parts||[]).length === 0;
+  else if(m === 'diet') empty = MEALS.every(function(x){ return (d[x.key]||[]).length === 0; });
+  else empty = (d.items || []).length === 0;
+  if(empty) delete data[m][ds];
+}
+/* 某天是否有记录 */
+function hasRecord(m, ds){
+  if(m === 'period') return isPeriodDay(ds);   // 经期记录是全局列表，不走单日结构
+  var d = data[m] && data[m][ds];
+  if(!d) return false;
+  if(m === 'fitness') return (d.strength||[]).some(function(it){ return isStrengthDone(it); }) || (d.cardio||[]).some(function(it){ return isCardioDone(it); });
+  if(m === 'diet')    return MEALS.some(function(x){ return (d[x.key]||[]).length > 0; }) || num(data.water[ds]) > 0;
+  return (d.items||[]).length > 0;
+}
+
+/* ---------------------- 经期计算 ---------------------- */
+/* 两个日期字符串相差天数（b - a） */
+function diffDays(a, b){
+  var x = (typeof a === 'string') ? parseYmd(a) : a;
+  var y = (typeof b === 'string') ? parseYmd(b) : b;
+  return Math.round((y - x) / 86400000);
+}
+/* 按开始日升序的经期记录 */
+function periodRecords(){
+  return ((data.period && data.period.records) || []).slice().sort(function(a,b){ return a.start < b.start ? -1 : 1; });
+}
+/* 当前「未结束」的那次经期（已点开始、还没点结束） */
+function openRecord(){
+  var recs = (data.period && data.period.records) || [];
+  for(var i=0; i<recs.length; i++){ if(!recs[i].end) return recs[i]; }
+  return null;
+}
+/* 该次经期的持续天数：手动结束用实际天数，否则用默认经期天数推算 */
+function recordDays(r){
+  if(r.end && num(r.days) > 0) return num(r.days);
+  return Math.max(3, Math.min(10, num(data.period.settings.periodLen) || 5));
+}
+/* 该次经期的结束日：手动结束用实际日期，否则按默认天数推算 */
+function recordEnd(r){
+  if(r.end) return r.end;
+  return ymd(addDays(parseYmd(r.start), recordDays(r) - 1));
+}
+/* 该日期是否落在某次经期内（未结束的按默认天数推算范围） */
+function isPeriodDay(ds){
+  var recs = (data.period && data.period.records) || [];
+  for(var i=0; i<recs.length; i++){
+    if(recs[i].start <= ds && ds <= recordEnd(recs[i])) return true;
+  }
+  return false;
+}
+/* 找出「该日期落在哪一段经期」：
+ * 已闭合记录 → 必须落在 [开始日, 结束日] 闭区间内；
+ * 未闭合记录（进行中）→ 只要日期 ≥ 开始日就算落在区间内。
+ * 返回 null 表示该日期不在任何经期区间内。
+ */
+function periodRecordAt(ds){
+  var recs = periodRecords();
+  var hit = null;
+  for(var i=0; i<recs.length; i++){
+    var r = recs[i];
+    var inRange = r.end ? (r.start <= ds && ds <= r.end) : (r.start <= ds);
+    if(inRange) hit = r;
+  }
+  return hit;
+}
+
+/* ---------------------- 周期长度自动计算 ----------------------
+ * 取最近 5 次月经开始日的间隔；满 5 个间隔时去掉最大、最小后取平均，
+ * 不足 5 个间隔就用已有间隔直接平均；不足 2 次记录则用默认 28 天。
+ */
+function cycleInfo(){
+  var recs = periodRecords();
+  if(recs.length < 2){
+    return { len:28, auto:false, count:recs.length, need:(2 - recs.length), samples:0 };
+  }
+  var gaps = [];
+  for(var i=1; i<recs.length; i++) gaps.push(diffDays(recs[i-1].start, recs[i].start));
+  var g = gaps.slice(-5);
+  var used = (g.length >= 5) ? g.slice().sort(function(a,b){ return a-b; }).slice(1, -1) : g;
+  var sum = 0;
+  used.forEach(function(x){ sum += x; });
+  var avg = Math.round(sum / used.length);
+  return {
+    len: Math.max(21, Math.min(45, avg)),
+    auto: true,
+    count: recs.length,
+    samples: g.length,
+    gaps: g
+  };
+}
+/* 当前采用的周期长度（天） */
+function cycleLen(){ return cycleInfo().len; }
+/* 核心推算：返回某天所处的周期阶段 */
+function periodCalc(ds){
+  var recs = periodRecords();
+  if(!recs.length) return null;
+  var L = cycleLen();                                              // 自动计算的周期长度
+  var defN = Math.max(3, Math.min(10, num(data.period.settings.periodLen) || 5));
+
+  // 以“不晚于该日期的最后一次开始日”为基准
+  var base = null;
+  for(var i=0; i<recs.length; i++){ if(recs[i].start <= ds) base = recs[i].start; }
+  if(!base) return null;
+  var lastStart = recs[recs.length-1].start;
+
+  // 超出实际记录范围时，按周期长度向前滚动，得到连续的预测周期
+  var gap = diffDays(base, ds);
+  var predicted = false;
+  while(gap >= L){ base = ymd(addDays(parseYmd(base), L)); gap -= L; predicted = true; }
+  // 只有“滚动过”才算预测；若基准就是最后一次记录且未滚动，则不是预测
+  if(base === lastStart && gap < L) predicted = false;
+
+  // 本次周期的真实经期天数：优先用这条记录的实际天数（手动结束时 = 结束日 - 开始日 + 1，闭区间），
+  // 滚动出来的预测周期没有对应记录，才退回默认经期天数
+  var baseRec = null;
+  for(var j=0; j<recs.length; j++){ if(recs[j].start === base) baseRec = recs[j]; }
+  var N = baseRec ? recordDays(baseRec) : defN;
+
+  var dayIndex = gap + 1;
+  var ovDay = Math.max(N + 2, L - 14);          // 排卵日 = 周期长度 - 14，且不早于经期结束次日
+  var phase;
+  // 经期 = [开始日, 结束日] 闭区间；结束日的次日（dayIndex = N+1）才是卵泡期第一天
+  if(dayIndex <= N) phase = 'period';
+  else if(dayIndex >= ovDay - 1 && dayIndex <= ovDay + 1) phase = 'ovulation';
+  else if(dayIndex < ovDay) phase = 'follicular';   // 卵泡期 = [N+1, ovDay-2]
+  else phase = 'luteal';                            // 黄体期 = [ovDay+2, L]
+
+  var nextStart = ymd(addDays(parseYmd(base), L));
+  var daysToNext = diffDays(ds, nextStart);     // 距下次月经还有几天（0 = 就是今天）
+  return {
+    phase: phase, dayIndex: dayIndex, cycleLen: L, periodLen: N,
+    periodEnd: ymd(addDays(parseYmd(base), N - 1)),   // 本次经期的结束日（含）
+    start: base, nextStart: nextStart, daysToNext: daysToNext,
+    upcoming: daysToNext <= 2,                  // 距下次月经 ≤ 2 天
+    predicted: predicted,
+    isPeriod: dayIndex <= N
+  };
+}
+/* 小贴士卡片 HTML */
+function tipCardHtml(key){
+  var t = PERIOD_TIPS[key];
+  if(!t) return '';
+  return '<div class="tip-card">' +
+           '<div class="tip-icon" style="background:' + t.color + '1A">' + t.icon + '</div>' +
+           '<div class="tip-body"><div class="tip-title" style="color:' + t.color + '">' + t.title + '</div>' +
+           '<div class="tip-text">' + t.text + '</div></div>' +
+         '</div>';
+}
+
+/* ---------------------- 汇总计算 ---------------------- */
+/* 单条无氧时长：手填优先，否则按 组数×(每组次数×3秒 + 组歇) 估算（分钟） */
+function strengthMinutes(it){
+  if(it.minutes !== undefined && it.minutes !== null && it.minutes !== '') return num(it.minutes);
+  var sets = num(it.sets), reps = num(it.reps), rest = num(it.rest);
+  return Math.round(sets * (reps * 3 + rest) / 60 * 10) / 10;
+}
+/* 无氧动作是否已完成全部计划组数 */
+function isStrengthDone(it){
+  var plan = num(it.sets);
+  return plan > 0 && num(it.done) >= plan;
+}
+/* 有氧是否已完成（点过「完成」才计入汇总；旧数据无 done 字段视为已完成） */
+function isCardioDone(it){ return it.done === undefined ? true : num(it.done) > 0; }
+function fitSummary(ds){
+  var d = getDay('fitness', ds);
+  var sm = 0, cm = 0, kcal = 0, doneCount = 0;
+  // 仅「已完成」的无氧动作计入总时长与完成数
+  d.strength.forEach(function(it){ if(isStrengthDone(it)){ sm += strengthMinutes(it); doneCount++; } });
+  // 仅「已完成」的有氧动作计入总时长与消耗
+  d.cardio.forEach(function(it){ if(isCardioDone(it)){ cm += num(it.minutes); kcal += num(it.calories); } });
+  return {
+    strengthMin: Math.round(sm*10)/10,
+    cardioMin: Math.round(cm*10)/10,
+    kcal: Math.round(kcal),
+    parts: d.parts || [],
+    doneCount: doneCount,
+    strengthCount: d.strength.length
+  };
+}
+function dietSummary(ds){
+  var d = getDay('diet', ds);
+  var t = { kcal:0, carb:0, fat:0, protein:0 };
+  MEALS.forEach(function(m){
+    d[m.key].forEach(function(it){
+      t.kcal += num(it.kcal); t.carb += num(it.carb);
+      t.fat += num(it.fat);   t.protein += num(it.protein);
+    });
+  });
+  t.kcal = Math.round(t.kcal);
+  t.carb = Math.round(t.carb*10)/10;
+  t.fat = Math.round(t.fat*10)/10;
+  t.protein = Math.round(t.protein*10)/10;
+  return t;
+}
+function studySummary(ds){
+  var d = getDay('study', ds);
+  var m = 0;
+  d.items.forEach(function(it){ m += num(it.minutes); });
+  return { minutes: Math.round(m*10)/10 };
+}
+/* 月视图 / 日视图 的摘要文案 */
+function daySummaryText(m, ds){
+  if(m === 'fitness'){
+    var s = fitSummary(ds);
+    if(!s.strengthMin && !s.cardioMin && !s.parts.length) return '';
+    var parts = [];
+    if(s.strengthMin) parts.push('无氧 ' + s.strengthMin + 'min');
+    if(s.cardioMin)   parts.push('有氧 ' + s.cardioMin + 'min');
+    var txt = parts.join(' / ');
+    if(s.parts.length)  txt += (txt ? ' · ' : '') + s.parts.join('/');
+    if(s.doneCount)     txt += (txt ? ' · ' : '') + '完成 ' + s.doneCount + '个动作';
+    return txt;
+  }
+  if(m === 'diet'){
+    var t = dietSummary(ds);
+    return t.kcal ? (t.kcal + ' kcal') : '';
+  }
+  if(m === 'period'){
+    var pi = periodCalc(ds);
+    return pi ? (PHASE_LABEL[pi.phase] + ' · 周期第 ' + pi.dayIndex + ' 天') : '';
+  }
+  var st = studySummary(ds);
+  return st.minutes ? (st.minutes + ' min') : '';
+}
+/* 月视图格子内的摘要 HTML —— 内容严格跟随当前模式，不会跨模式混显示 */
+function cellInner(m, ds){
+  if(m === 'fitness'){
+    var s = fitSummary(ds);
+    var ps = [];
+    if(s.strengthMin) ps.push('无氧 ' + s.strengthMin + 'm');
+    if(s.cardioMin)   ps.push('有氧 ' + s.cardioMin + 'm');
+    var html = ps.length ? '<div class="c-sum">' + esc(ps.join(' / ')) + '</div>' : '';
+    // 只有真的完成了动作/有氧，才显示部位与完成标记（否则当天不算训练日）
+    var showSummary = s.strengthMin || s.cardioMin || s.doneCount;
+    if(showSummary && s.parts.length){
+      html += '<div class="c-parts">';
+      s.parts.slice(0, 3).forEach(function(p){ html += '<span>' + esc(p) + '</span>'; });
+      if(s.parts.length > 3) html += '<span>+' + (s.parts.length - 3) + '</span>';
+      if(s.doneCount) html += '<b>✅' + s.doneCount + '动作</b>';
+      html += '</div>';
+    }else if(s.doneCount){
+      html += '<b class="c-done">✅' + s.doneCount + '动作</b>';
+    }
+    return html || '<div class="c-sum empty">—</div>';
+  }
+  if(m === 'period'){
+    var pi = periodCalc(ds);
+    if(pi) return '<div class="c-phase"><i class="' + pi.phase + '"></i><span>' + PHASE_SHORT[pi.phase] + '</span></div>';
+    return '<div class="c-sum empty">—</div>';
+  }
+  var txt = daySummaryText(m, ds);
+  var h = txt ? '<div class="c-sum">' + esc(txt) + '</div>' : '';
+  // 饮食模式：当天有饮水记录就在卡路里下方加一个小水滴
+  if(m === 'diet' && num(data.water[ds]) > 0) h += '<div class="c-water">💧</div>';
+  return h || '<div class="c-sum empty">—</div>';
+}
+/* 详情标题下方的副标题 */
+function dayHeadline(m, ds){
+  if(m === 'fitness'){
+    var s = fitSummary(ds);
+    var t = '无氧 ' + s.strengthMin + ' min · 有氧 ' + s.cardioMin + ' min · 消耗 ' + s.kcal + ' kcal';
+    if(s.parts.length) t += ' · 训练部位 ' + s.parts.join('/');
+    if(s.strengthCount) t += ' · 完成 ' + s.doneCount + '/' + s.strengthCount + ' 个动作';
+    return t;
+  }
+  if(m === 'period'){
+    var pi = periodCalc(ds);
+    if(!pi) return '暂无经期记录，点「记录月经开始」开始追踪';
+    return '周期第 ' + pi.dayIndex + ' 天 · ' + PHASE_LABEL[pi.phase] +
+           ' · 距下次月经 ' + pi.daysToNext + ' 天（预计 ' + pi.nextStart + '）';
+  }
+  if(m === 'diet'){
+    var t = dietSummary(ds);
+    return '热量 ' + t.kcal + ' kcal · 碳水 ' + t.carb + 'g · 脂肪 ' + t.fat + 'g · 蛋白 ' + t.protein + 'g';
+  }
+  return '学习总时长 ' + studySummary(ds).minutes + ' min';
+}
+
+/* =====================================================================
+ *  日历渲染
+ * ===================================================================== */
+function renderCalendar(){
+  var box = $('viewBox');
+  $('calTitle').textContent = titleText();
+  // 高亮当前视图按钮
+  var segs = $('viewSeg').children;
+  for(var i=0;i<segs.length;i++) segs[i].classList.toggle('on', segs[i].getAttribute('data-view') === view);
+
+  if(view === 'year')      box.innerHTML = renderYear();
+  else if(view === 'month')box.innerHTML = renderMonth();
+  else                     box.innerHTML = renderDayHero();
+  bindCalendarEvents();
+}
+function titleText(){
+  if(view === 'year')  return cursor.getFullYear() + ' 年';
+  if(view === 'month') return cursor.getFullYear() + ' 年 ' + (cursor.getMonth()+1) + ' 月';
+  return cursor.getFullYear() + ' 年 ' + (cursor.getMonth()+1) + ' 月 ' + cursor.getDate() + ' 日';
+}
+
+/* ---- 年视图：12 个月宫格，用小圆点标记有记录的天数 ---- */
+function renderYear(){
+  var y = cursor.getFullYear();
+  var html = '<div class="year-grid">';
+  for(var m=0; m<12; m++){
+    var first = new Date(y, m, 1);
+    var days = new Date(y, m+1, 0).getDate();
+    var count = 0, dots = '', partMap = {}, partList = [];
+    var offset = first.getDay(); // 周日前置，对齐星期
+    for(var i=0;i<offset;i++) dots += '<i class="pad"></i>';
+    for(var d=1; d<=days; d++){
+      var ds = y + '-' + pad2(m+1) + '-' + pad2(d);
+      var on = hasRecord(mode, ds);
+      if(on) count++;
+      // 年视图：统计该月在健身模式下练过哪些部位
+      if(mode === 'fitness'){
+        var dp = data.fitness && data.fitness[ds] && data.fitness[ds].parts;
+        if(dp) dp.forEach(function(p){ if(!partMap[p]){ partMap[p] = 1; partList.push(p); } });
+      }
+      dots += '<i class="' + (on ? 'on' : '') + '"></i>';
+    }
+    var isCur = (y === today().getFullYear() && m === today().getMonth());
+    var partsHtml = '';
+    if(mode === 'fitness' && partList.length){
+      partsHtml = '<div class="y-parts">' + partList.map(function(p){ return '<span>' + esc(p) + '</span>'; }).join('') + '</div>';
+    }
+    html += '<div class="ycard' + (isCur ? ' cur' : '') + '" data-month="' + m + '">' +
+              '<div class="y-title">' + (m+1) + ' 月</div>' +
+              '<div class="y-count">' + (count ? count + ' 天有' + MODES[mode].name + '记录' : '暂无记录') + '</div>' +
+              '<div class="dots">' + dots + '</div>' + partsHtml +
+            '</div>';
+  }
+  return html + '</div>';
+}
+
+/* ---- 月视图：标准月历，格子内显示当日摘要 ---- */
+function renderMonth(){
+  var y = cursor.getFullYear(), m = cursor.getMonth();
+  var first = new Date(y, m, 1);
+  var days = new Date(y, m+1, 0).getDate();
+  var offset = first.getDay();
+  var total = Math.ceil((offset + days) / 7) * 7;
+
+  // 经期模式：月视图顶部显示当前所处阶段 / 距下次月经 / 周期第几天
+  var head = '';
+  if(mode === 'period'){
+    var now = periodCalc(ymd(today()));
+    if(now){
+      var lb = PHASE_LABEL[now.phase];
+      head = '<div class="period-banner">' +
+               '<span class="pb-dot" style="background:' + PHASE_COLOR[now.phase] + '"></span>' +
+               '<div style="flex:1;min-width:150px">' +
+                 '<div class="pb-main" style="color:' + PHASE_COLOR[now.phase] + '">当前阶段：' + lb +
+                   (now.upcoming ? ' · 即将来月经' : '') + '</div>' +
+                 '<div class="pb-sub">距下次月经还有 ' + now.daysToNext + ' 天（预计 ' + now.nextStart + '）' +
+                   (now.predicted ? ' · 预测周期' : '') + '</div>' +
+               '</div>' +
+               '<div class="pb-day">第 ' + now.dayIndex + ' 天<small> / ' + now.cycleLen + '</small></div>' +
+             '</div>';
+    }else{
+      head = '<div class="period-banner"><div class="pb-main">还没有经期记录</div>' +
+             '<div class="pb-sub">点下方详情页的「记录月经开始」即可开始追踪</div></div>';
+    }
+  }
+
+  var html = head + '<div class="week-head">';
+  for(var w=0; w<7; w++) html += '<div>' + WEEK[w] + '</div>';
+  html += '</div><div class="month-grid">';
+
+  for(var i=0; i<total; i++){
+    var dayNum = i - offset + 1;
+    var d = new Date(y, m, dayNum);
+    var ds = ymd(d);
+    var other = (dayNum < 1 || dayNum > days);
+    var cls = 'cell';
+    if(other) cls += ' other';
+    if(mode === 'period' && !other){
+      var pc = periodCalc(ds);
+      if(pc){
+        cls += ' ph-' + pc.phase;
+        if(pc.predicted && pc.isPeriod) cls += ' ph-predicted';   // 预测的下次月经：红色虚线边框
+      }
+    }
+    if(sameDay(d, today())) cls += ' today';
+    if(sameDay(d, selected)) cls += ' sel';
+    if(hasRecord(mode, ds)) cls += ' has';
+    // 格子摘要严格按当前模式生成（健身=时长+部位，饮食=卡路里，学习=时长）
+    var inner = other ? '<div class="c-sum empty">—</div>' : cellInner(mode, ds);
+    html += '<div class="' + cls + '" data-date="' + ds + '">' +
+              '<div class="c-num">' + d.getDate() + '</div>' + inner +
+            '</div>';
+  }
+  return html + '</div>';
+}
+
+/* ---- 日视图：大日期 + 摘要 ---- */
+function renderDayHero(){
+  var ds = ymd(cursor);
+  var s = daySummaryText(mode, ds) || '暂无' + MODES[mode].name + '记录';
+  return '<div class="day-hero">' +
+           '<div class="dh-date">' + cursor.getDate() + '</div>' +
+           '<div style="flex:1;min-width:150px">' +
+             '<div class="dh-info">' + cursor.getFullYear() + ' 年 ' + (cursor.getMonth()+1) + ' 月 ' + cursor.getDate() + ' 日 · 星期' + WEEK[cursor.getDay()] +
+               (sameDay(cursor, today()) ? ' · 今天' : '') + '</div>' +
+             '<div class="dh-sum">今日：' + esc(s) + '</div>' +
+           '</div>' +
+           '<button class="btn sm" id="backMonth">返回月视图</button>' +
+         '</div>';
+}
+
+/* 日历区事件绑定（每次重绘后重新绑定） */
+function bindCalendarEvents(){
+  var box = $('viewBox');
+  box.querySelectorAll('.cell').forEach(function(el){
+    el.addEventListener('click', function(){
+      var ds = el.getAttribute('data-date');
+      selected = parseYmd(ds);
+      cursor = new Date(selected.getTime());
+      view = 'day';               // 点击某一天 → 进入日视图详情
+      renderAll();
+    });
+  });
+  box.querySelectorAll('.ycard').forEach(function(el){
+    el.addEventListener('click', function(){
+      cursor = new Date(cursor.getFullYear(), +el.getAttribute('data-month'), 1);
+      view = 'month';
+      renderAll();
+    });
+  });
+  var back = $('backMonth');
+  if(back) back.addEventListener('click', function(){
+    cursor = new Date(selected.getFullYear(), selected.getMonth(), 1);
+    view = 'month';
+    renderAll();
+  });
+}
+
+/* =====================================================================
+ *  详情面板（日视图内容，随模式切换）
+ * ===================================================================== */
+function renderDetail(){
+  var ds = ymd(selected);
+  var box = $('detailBox');
+  var head = '<div class="d-head">' +
+      '<div class="d-title">' + MODES[mode].name + '记录 · ' + ds +
+        '<small>星期' + WEEK[selected.getDay()] + (sameDay(selected, today()) ? ' · 今天' : '') + '</small></div>' +
+      '<div style="font-size:12.5px;color:var(--muted)">' + esc(dayHeadline(mode, ds)) + '</div>' +
+    '</div>';
+  var body = '';
+  if(mode === 'fitness')      body = detailFitness(ds);
+  else if(mode === 'diet')    body = detailDiet(ds);
+  else if(mode === 'period')  body = detailPeriod(ds);
+  else                        body = detailStudy(ds);
+  box.innerHTML = head + body;
+  bindDetailEvents();
+  if(mode === 'fitness'){ drawChart(); }
+}
+
+/* ---------- 健身模式 ---------- */
+function detailFitness(ds){
+  var d = getDay('fitness', ds);
+  var s = fitSummary(ds);
+  var parts = d.parts || [];
+  var html =
+    '<div class="sum-cards">' +
+      '<div class="sum"><div class="k">无氧总时长</div><div class="v">' + s.strengthMin + '<span>min</span></div></div>' +
+      '<div class="sum"><div class="k">有氧总时长</div><div class="v">' + s.cardioMin + '<span>min</span></div></div>' +
+      '<div class="sum"><div class="k">总消耗</div><div class="v">' + s.kcal + '<span>kcal</span></div></div>' +
+      '<div class="sum"><div class="k">完成动作</div><div class="v">' + s.doneCount + '<span>/' + s.strengthCount + '</span></div></div>' +
+    '</div>' + copyRowHtml('fitness', ds);
+
+  /* --- 今日训练部位（多选标签） --- */
+  html += '<div class="block"><div class="block-head"><h3>今日训练部位</h3>' +
+          '<span style="font-size:11.5px;color:var(--muted)">可多选，自动同步到月历格子与年视图</span></div>' +
+          '<div class="block-body"><div class="parts-chips">' +
+          PARTS.map(function(p){
+            return '<button class="chip' + (parts.indexOf(p) >= 0 ? ' on' : '') + '" data-part="' + esc(p) + '">' + esc(p) + '</button>';
+          }).join('') +
+          '</div></div></div>';
+
+  /* --- 无氧训练（每个条目内嵌组间追踪器） --- */
+  html += '<div class="block"><div class="block-head"><h3>无氧训练</h3>' +
+          '<button class="btn primary sm" data-add="strength">+ 添加动作</button></div><div class="block-body">';
+  if(!d.strength.length){
+    html += '<div class="empty-tip">还没有无氧记录，点右上角添加（深蹲 / 卧推 / 硬拉…）</div>';
+  }else{
+    html += '<div class="items">';
+    d.strength.forEach(function(it){ html += strengthItemHtml(it); });
+    html += '</div>';
+  }
+  html += '</div></div>';
+
+  /* --- 有氧训练 --- */
+  html += '<div class="block"><div class="block-head"><h3>有氧训练</h3>' +
+          '<button class="btn primary sm" data-add="cardio">+ 添加项目</button></div><div class="block-body">';
+  if(!d.cardio.length){
+    html += '<div class="empty-tip">还没有有氧记录，点右上角添加（跑步 / 椭圆机 / 跳绳…）</div>';
+  }else{
+    html += '<div class="items">';
+    d.cardio.forEach(function(it){ html += cardioItemHtml(it); });
+    html += '</div>';
+  }
+  html += '</div></div>';
+
+  /* --- 体重记录与曲线 --- */
+  html += '<div class="block"><div class="block-head"><h3>体重记录与曲线</h3>' +
+          '<div class="seg-sm" id="rangeSeg">' +
+            '<button data-range="30" class="' + (data.settings.chartRange === '30' ? 'on' : '') + '">最近30天</button>' +
+            '<button data-range="all" class="' + (data.settings.chartRange === 'all' ? 'on' : '') + '">全部</button>' +
+          '</div></div><div class="block-body">' +
+            '<div class="wrow"><input type="date" id="wDate" value="' + ds + '">' +
+            '<input type="number" id="wKg" step="0.1" min="20" max="300" placeholder="例如 65.5">' +
+            '          <button class="btn primary" id="wAdd">记录体重(kg)</button></div>' +
+            '<div id="wStats" style="margin-top:10px">' + weightStatsHtml() + '</div>' +
+            ((data.period.records || []).length ? periodLegendHtml() : '') +
+            '<div class="chart-wrap"><canvas id="wChart"></canvas><div class="chart-tip" id="chartTip" hidden>暂无体重数据</div></div>' +
+            '<div class="w-list" id="wList">' + weightListHtml() + '</div>' +
+          '</div></div>';
+  return html;
+}
+
+/* ---------- 单个无氧动作条目（含组间追踪器） ---------- */
+function strengthItemHtml(it){
+  var plan = num(it.sets), done = num(it.done);
+  var finished = isStrengthDone(it);
+  var resting = !!(it.restEndAt && it.restEndAt > Date.now());
+  var cls = 'item st-item';
+  if(finished) cls += ' finished';
+  if(resting)  cls += ' resting';
+
+  var html = '<div class="' + cls + '" id="stitem-' + it.id + '"><div class="item-main">';
+  var stateBadge = finished ? '<span class="st-badge done">已完成</span>'
+                  : (it.startedAt ? '<span class="st-badge doing">进行中</span>' : '<span class="st-badge todo">未开始</span>');
+  html += '<div class="st-head"><div class="item-name">' + esc(it.name) + '</div>' +
+          '<span class="st-badge">' + Math.min(done, plan) + '/' + plan + ' 组</span>' +
+          stateBadge +
+          '</div>';
+  html += '<div class="item-meta">' +
+            '<span>计划 <em>' + plan + '</em> 组</span>' +
+            '<span>每组 <em>' + num(it.reps) + '</em> 次</span>' +
+            '<span>重量 <em>' + num(it.weight) + '</em> kg</span>' +
+            '<span>组歇 <em>' + num(it.rest) + '</em> s</span>' +
+            '<span>预估 <em>' + strengthMinutes(it) + '</em> min</span>' +
+            (it.totalSec ? '<span>实测耗时 <em>' + fmtDuration(it.totalSec) + '</em></span>' : '') +
+          '</div>';
+  if(it.note) html += '<div class="item-note">' + esc(it.note) + '</div>';
+
+  // 进度条：休息中显示休息剩余比例，否则显示已完成组数比例
+  var left = resting ? Math.max(0, it.restEndAt - Date.now()) : 0;
+  var barPct = resting ? (left / (num(it.restTotal || it.rest || 60) * 1000) * 100)
+                       : (plan ? Math.min(100, done / plan * 100) : 0);
+  html += '<div class="st-bar' + (resting ? ' rest' : '') + '" id="stbar-' + it.id + '"><i style="width:' + barPct + '%"></i></div>';
+
+  if(resting){
+    html += '<div class="st-progress">休息中，倒计时结束会提醒你开始第 <em>' + (done + 1) + '</em> 组</div>';
+  }else if(!finished){
+    html += '<div class="st-progress">已完成 <em>' + done + '</em> / ' + plan + ' 组</div>';
+  }else{
+    html += '<div class="st-progress">已完成全部 <em>' + plan + '</em> 组，实测耗时 <em>' + fmtDuration(it.totalSec || 0) + '</em></div>';
+  }
+
+  // 追踪器操作按钮
+  html += '<div class="st-ops">';
+  if(finished){
+    html += '<button class="btn st-btn" disabled>✅ ' + esc(it.name) + ' 完成</button>' +
+            '<button class="btn sm danger" data-act="reset" data-id="' + it.id + '">重新训练</button>';
+  }else if(resting){
+    html += '<button class="btn st-btn" id="stbtn-' + it.id + '" disabled>休息中 ' + Math.ceil(left / 1000) + 's</button>' +
+            '<button class="btn sm" data-act="skip" data-id="' + it.id + '">跳过本组休息</button>' +
+            '<button class="btn sm danger" data-act="reset" data-id="' + it.id + '">中断 / 重置</button>';
+  }else{
+    var label = (done === 0 && !it.startedAt) ? '开始第 1 组' : ('完成第 ' + (done + 1) + ' 组');
+    html += '<button class="btn primary st-btn" id="stbtn-' + it.id + '" data-act="main" data-id="' + it.id + '">' + label + '</button>';
+    if(done > 0 || it.startedAt){
+      html += '<button class="btn sm danger" data-act="reset" data-id="' + it.id + '">中断 / 重置</button>';
+    }
+  }
+  html += '</div></div>'; // end .item-main
+
+  html += '<div class="item-ops">' +
+            '<button class="btn sm" data-edit="strength" data-id="' + it.id + '">编辑</button>' +
+            '<button class="btn sm danger" data-del="strength" data-id="' + it.id + '">删除</button>' +
+          '</div></div>';
+  return html;
+}
+/* 秒 → "12分34秒" */
+function fmtDuration(sec){
+  sec = Math.max(0, Math.round(num(sec)));
+  if(sec < 60) return sec + ' 秒';
+  var m = Math.floor(sec / 60), s = sec % 60;
+  return s ? (m + ' 分 ' + s + ' 秒') : (m + ' 分');
+}
+
+/* ---------- 单个有氧条目（带「完成」按钮） ---------- */
+function cardioItemHtml(it){
+  var done = isCardioDone(it);
+  var cls = 'item cardio-item' + (done ? ' finished' : ' pending');
+  var html = '<div class="' + cls + '" id="citem-' + it.id + '"><div class="item-main">';
+  html += '<div class="item-name">' + esc(it.type) +
+            (done ? '' : ' <span class="st-badge todo">未完成</span>') + '</div>';
+  html += '<div class="item-meta">' +
+            '<span>时长 <em>' + num(it.minutes) + '</em> min</span>' +
+            (it.distance ? '<span>距离 <em>' + num(it.distance) + '</em> km</span>' : '') +
+            (it.calories ? '<span>消耗 <em>' + num(it.calories) + '</em> kcal</span>' : '') +
+          '</div>';
+  if(it.note) html += '<div class="item-note">' + esc(it.note) + '</div>';
+  if(!done) html += '<div class="st-progress">未标记完成，不计入当日汇总（点「完成」记录实际用时，可在编辑里修改时长）</div>';
+  else html += '<div class="st-progress">已完成，已计入当日有氧时长与消耗</div>';
+  html += '</div><div class="item-ops">';
+  if(done){
+    html += '<button class="btn sm" data-act="uncomplete-cardio" data-id="' + it.id + '">撤销完成</button>';
+  }else{
+    html += '<button class="btn primary sm" data-act="complete-cardio" data-id="' + it.id + '">完成</button>';
+  }
+  html += '<button class="btn sm" data-edit="cardio" data-id="' + it.id + '">编辑</button>' +
+          '<button class="btn sm danger" data-del="cardio" data-id="' + it.id + '">删除</button>' +
+        '</div></div>';
+  return html;
+}
+
+/* ---------- 经期模式 ---------- */
+function detailPeriod(ds){
+  var st = data.period.settings;
+  var info = periodCalc(ds);
+  var recs = data.period.records.slice().sort(function(a,b){ return a.start < b.start ? 1 : -1; });
+  var html = '';
+
+  /* 顶部汇总卡片 */
+  if(info){
+    html += '<div class="sum-cards">' +
+        '<div class="sum"><div class="k">当前阶段</div><div class="v" style="font-size:17px;color:' + PHASE_COLOR[info.phase] + '">' +
+          PHASE_LABEL[info.phase] + '</div></div>' +
+        '<div class="sum"><div class="k">周期第几天</div><div class="v">' + info.dayIndex + '<span>/' + info.cycleLen + '</span></div></div>' +
+        '<div class="sum"><div class="k">距下次月经</div><div class="v">' + info.daysToNext + '<span>天</span></div></div>' +
+        '<div class="sum"><div class="k">下次预计</div><div class="v" style="font-size:14px">' + info.nextStart + '</div></div>' +
+      '</div>';
+  }else{
+    html += '<div class="sum-cards"><div class="sum" style="grid-column:1/-1">' +
+            '<div class="k">状态</div><div class="v" style="font-size:15px">还没有经期记录</div></div></div>';
+  }
+
+  /* 周期长度：自动计算展示（不再让用户手填） */
+  var ci = cycleInfo();
+  html += '<div class="block"><div class="block-head"><h3>周期长度</h3>' +
+          '<span style="font-size:11.5px;color:var(--muted)">根据历史记录自动计算</span></div>' +
+          '<div class="block-body">' +
+            '<div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap">' +
+              '<b style="font-size:26px;color:var(--accent)">' + ci.len + '</b><span style="font-size:13px;color:var(--muted)">天</span>' +
+              (ci.auto
+                ? '<span class="st-badge">自动计算自最近 ' + ci.count + ' 次记录（' + ci.samples + ' 个间隔）</span>'
+                : '<span class="st-badge">默认初始值</span>') +
+            '</div>' +
+            (ci.auto
+              ? '<div style="margin-top:6px;font-size:12px;color:var(--muted)">间隔样本：' + ci.gaps.join(' / ') + ' 天</div>'
+              : '<div style="margin-top:6px;font-size:12px;color:var(--muted)">再记录 ' + ci.need + ' 次月经开始后，将自动计算你的真实周期长度</div>') +
+            '<div class="prow" style="margin-top:10px">' +
+              '<label>默认经期天数（3-10 天，未手动结束时按此推算）' +
+                '<input type="number" id="pLen" min="3" max="10" step="1" value="' + num(st.periodLen) + '"></label>' +
+            '</div>' +
+          '</div></div>';
+
+  /* 记录操作：主按钮状态由「该日期落在哪段 [开始日, 结束日] 区间内」决定 */
+  var dayLabel = sameDay(selected, today()) ? '今天' : ds;
+  var hit = periodRecordAt(ds);
+  var open = openRecord();
+  if(!hit && open) hit = open;      // 有进行中的经期、却选了更早的日期 → 仍然只给「结束」按钮
+
+  html += '<div class="block"><div class="block-head"><h3>记录</h3>' +
+          '<span style="font-size:11.5px;color:var(--muted)">主按钮仅作用于 ' +
+            (sameDay(selected, today()) ? '今天 ' : '所选日期 ') + ds +
+            '；补录请在历史记录里删除后重录</span></div>' +
+          '<div class="block-body">';
+  if(hit && !hit.end){
+    // ① 该日期落在「进行中」的经期里 → 只显示结束按钮
+    var dIdx = Math.max(1, diffDays(hit.start, ds) + 1);
+    html += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px">' +
+              '<span class="pb-dot" style="background:#E8453C"></span>' +
+              '<b style="font-size:14px;color:#E8453C">经期进行中・第 ' + dIdx + ' 天</b>' +
+              '<span style="font-size:12px;color:var(--muted)">开始于 ' + hit.start +
+                ' · 未手动结束则按默认 ' + recordDays(hit) + ' 天推算至 ' + recordEnd(hit) + '</span>' +
+            '</div>' +
+            '<div style="display:flex;gap:9px;flex-wrap:wrap;align-items:center">' +
+              '<button class="btn primary" id="pEndBtn">记录月经结束（' + ds + '）</button>' +
+              '<span style="font-size:12px;color:var(--muted)">结束后本次记录闭合</span>' +
+            '</div>';
+  }else if(hit){
+    // ② 该日期落在「已闭合」的经期里 → 只给提示，不开放重复开始入口
+    var idx = diffDays(hit.start, ds) + 1;
+    html += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px">' +
+              '<span class="pb-dot" style="background:#E8453C"></span>' +
+              '<b style="font-size:14px;color:#E8453C">' + dayLabel + '是经期第 ' + idx + ' 天（这段经期已结束）</b>' +
+              '<span style="font-size:12px;color:var(--muted)">' + hit.start + ' ～ ' + hit.end +
+                '，共 ' + recordDays(hit) + ' 天</span>' +
+            '</div>' +
+            '<div class="empty-tip" style="padding:10px">该日期已在经期记录内，不提供重复的「记录月经开始」入口。' +
+            '如需补录或修改，请到下方「历史记录」删除这条后重新记录。</div>';
+  }else{
+    // ③ 该日期不在任何经期区间内 → 才显示开始按钮
+    html += '<div style="display:flex;gap:9px;flex-wrap:wrap;align-items:center">' +
+              '<button class="btn primary" id="pStartBtn">记录月经开始（Day 1）</button>' +
+              '<span style="font-size:12px;color:var(--muted)">点击后把 ' + dayLabel + '（' + ds + '）记为本次月经 Day 1</span>' +
+            '</div>';
+  }
+  html += '</div></div>';
+
+  /* 阶段说明图例（按当前周期的真实经期天数展示边界） */
+  var ruleN = info ? info.periodLen : num(st.periodLen);
+  var ruleOv = Math.max(ruleN + 2, ci.len - 14);
+  html += '<div class="block"><div class="block-head"><h3>阶段推算规则</h3></div><div class="block-body">' +
+          '<div style="display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted)">' +
+            ['period','follicular','ovulation','luteal'].map(function(k){
+              return '<span style="display:flex;align-items:center;gap:5px">' +
+                     '<i style="width:8px;height:8px;border-radius:50%;background:' + PHASE_COLOR[k] + ';display:inline-block"></i>' +
+                     PHASE_LABEL[k] + '</span>';
+            }).join('') +
+          '</div>' +
+          '<div style="margin-top:7px;font-size:12px;color:var(--muted)">' +
+            '经期 Day 1-' + ruleN + '（含结束日）· 卵泡期 Day ' + (ruleN + 1) + '-' + (ruleOv - 2) +
+            ' · 排卵日 = 周期第 ' + ruleOv + ' 天（Day ' + (ruleOv - 1) + '-' + (ruleOv + 1) + ' 为易孕期）' +
+            ' · 黄体期 Day ' + (ruleOv + 2) + '-' + ci.len +
+          '</div></div></div>';
+
+  /* 锻炼小贴士 */
+  html += '<div class="block"><div class="block-head"><h3>锻炼小贴士</h3>' +
+          '<span style="font-size:11.5px;color:var(--muted)">根据 ' + ds + ' 所处阶段自动匹配</span></div>' +
+          '<div class="block-body">';
+  if(info){
+    html += tipCardHtml(info.phase);
+    if(info.upcoming) html += tipCardHtml('upcoming');
+  }else{
+    html += '<div class="empty-tip">记录一次月经开始后，这里会自动显示对应阶段的训练建议</div>';
+  }
+  html += '</div></div>';
+
+  /* 历史记录 */
+  html += '<div class="block"><div class="block-head"><h3>历史记录</h3>' +
+          '<span style="font-size:11.5px;color:var(--muted)">共 ' + recs.length + ' 次</span></div><div class="block-body">';
+  if(!recs.length){
+    html += '<div class="empty-tip">还没有记录</div>';
+  }else{
+    recs.forEach(function(r, i){
+      var nextGap = (i > 0) ? diffDays(r.start, recs[i-1].start) : 0; // recs 为倒序
+      var endTxt = r.end
+        ? ('<b>' + r.end + '</b>')
+        : ('<span style="color:#E8453C">进行中</span>（预计 <b>' + recordEnd(r) + '</b>）');
+      html += '<div class="p-rec"><div>' +
+                '<b>' + r.start + '</b> → ' + endTxt +
+                '<span style="margin-left:8px">持续 ' + recordDays(r) + ' 天</span>' +
+                (r.end ? '<span class="st-badge" style="margin-left:8px">手动结束</span>'
+                       : '<span class="st-badge" style="margin-left:8px">未手动结束</span>') +
+                (nextGap ? '<span style="margin-left:8px">· 距上次 ' + nextGap + ' 天</span>' : '') +
+              '</div>' +
+              '<button class="btn sm danger" data-pdel="' + r.id + '">删除</button></div>';
+    });
+  }
+  html += '</div></div>';
+  return html;
+}
+
+/* ---------- 饮水记录 ---------- */
+function waterOf(ds){ return num(data.water[ds]); }
+function waterGoal(){ return Math.max(1, num(data.settings.waterGoal) || 2000); }
+function waterCardHtml(ds){
+  var got = waterOf(ds), goal = waterGoal();
+  var pct = Math.min(100, Math.round(got / goal * 100));
+  var left = Math.max(0, goal - got);
+  return '<div class="block"><div class="block-head"><h3>💧 今日饮水</h3>' +
+      '<button class="btn sm" id="wGoalBtn">目标 <b>' + goal + '</b> ml（点击修改）</button></div>' +
+    '<div class="block-body">' +
+      '<div class="water-top">' +
+        '<div class="water-num"><b id="wNow">' + got + '</b><span>ml</span></div>' +
+        '<div style="flex:1;min-width:140px">' +
+          '<div class="wbar"><i id="wBar" style="width:' + pct + '%"></i></div>' +
+          '<div class="water-pct">已完成 <b>' + pct + '%</b> · 还差 ' + left + ' ml</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="water-ops">' +
+        '<button class="btn primary sm" data-water="200">+200ml</button>' +
+        '<button class="btn primary sm" data-water="300">+300ml</button>' +
+        '<button class="btn primary sm" data-water="500">+500ml</button>' +
+      '</div>' +
+      '<div class="water-ops">' +
+        '<input type="number" id="wCustom" min="1" step="10" placeholder="自定义 ml">' +
+        '<button class="btn sm" id="wAddCustom">添加</button>' +
+        '<button class="btn sm danger" id="wReset">重置今日饮水</button>' +
+      '</div>' +
+    '</div></div>';
+}
+function addWater(ml){
+  ml = Math.round(num(ml));
+  if(ml <= 0){ toast('请输入大于 0 的毫升数', 'warn'); return; }
+  var ds = ymd(selected);
+  data.water[ds] = Math.max(0, waterOf(ds) + ml);
+  save(); renderDetail(); renderCalendar();
+  toast('+' + ml + ' ml，今日共 ' + data.water[ds] + ' ml', 'ok');
+}
+function resetWater(){
+  var ds = ymd(selected);
+  confirmBox('确定把 ' + ds + ' 的饮水记录清零吗？', function(){
+    data.water[ds] = 0;
+    save(); renderDetail(); renderCalendar();
+    toast('已重置今日饮水', 'ok');
+  });
+}
+
+/* ---------- 营养目标 ---------- */
+/* 达标状态：超标>目标 → 红；达到目标 95% 以上 → 绿；否则正常色 */
+function goalState(actual, target){
+  target = num(target);
+  if(target <= 0) return '';
+  actual = num(actual);
+  if(actual > target) return 'over';
+  if(actual >= target * 0.95) return 'ok';
+  return '';
+}
+/* 一行「复制昨日记录」工具条 */
+function copyRowHtml(kind, ds){
+  var yd = ymd(addDays(parseYmd(ds), -1));
+  var has = false;
+  if(kind === 'fitness'){
+    var s = data.fitness[yd];
+    has = !!s && ((s.strength || []).length > 0 || (s.cardio || []).length > 0 || (s.parts || []).length > 0);
+  }else{
+    var dd = data.diet[yd];
+    has = !!dd && MEALS.some(function(m){ return (dd[m.key] || []).length > 0; });
+  }
+  return '<div class="copy-row">' +
+      '<button class="btn sm' + (has ? ' primary' : '') + '" id="copyPrev">📋 复制昨日记录</button>' +
+      '<span>' + (has ? ('昨天（' + yd + '）有记录，可一键复制到今天') : ('昨天（' + yd + '）没有' + (kind === 'fitness' ? '健身' : '饮食') + '记录')) + '</span>' +
+    '</div>';
+}
+/* 复制昨日 → 今天（健身：无氧 + 有氧 + 部位；饮食：四个餐次） */
+function copyYesterday(){
+  var ds = ymd(selected);
+  var yd = ymd(addDays(selected, -1));
+  if(mode === 'fitness'){
+    var src = data.fitness[yd];
+    if(!src || ((src.strength || []).length === 0 && (src.cardio || []).length === 0)){
+      toast('昨天（' + yd + '）没有可复制的健身记录', 'warn'); return;
+    }
+    var dst = data.fitness[ds];
+    var busy = !!dst && ((dst.strength || []).length || (dst.cardio || []).length || (dst.parts || []).length);
+    var doFit = function(){
+      var day = ensureDay('fitness', ds);
+      // 完成状态全部重置（从第 1 组开始），重量次数沿用昨天
+      day.strength = (src.strength || []).map(function(it){
+        return { id:uid(), name:it.name, sets:it.sets, reps:it.reps, weight:it.weight, rest:it.rest,
+                 minutes:'', note:it.note || '', done:0, startedAt:0, finishedAt:0, totalSec:0, restEndAt:0 };
+      });
+      day.cardio = (src.cardio || []).map(function(it){
+        return { id:uid(), type:it.type, minutes:it.minutes, distance:it.distance, calories:it.calories, note:it.note || '', done:0 };
+      });
+      day.parts = (src.parts || []).slice();
+      save(); renderAll(); toast('已复制昨日健身记录，可修改后保存', 'ok');
+    };
+    if(busy) confirmBox('今天已有健身记录，复制昨日会覆盖它们，确定继续吗？', doFit);
+    else doFit();
+    return;
+  }
+  if(mode === 'diet'){
+    var sd = data.diet[yd];
+    if(!sd || !MEALS.some(function(m){ return (sd[m.key] || []).length > 0; })){
+      toast('昨天（' + yd + '）没有可复制的饮食记录', 'warn'); return;
+    }
+    var hasNow = MEALS.some(function(m){ return (getDay('diet', ds)[m.key] || []).length > 0; });
+    var doDiet = function(){
+      var day = ensureDay('diet', ds);
+      MEALS.forEach(function(m){
+        day[m.key] = (sd[m.key] || []).map(function(it){
+          return { id:uid(), name:it.name, amount:it.amount, kcal:it.kcal, carb:it.carb, fat:it.fat, protein:it.protein };
+        });
+      });
+      save(); renderAll(); toast('已复制昨日饮食记录，可修改后保存', 'ok');
+    };
+    if(hasNow) confirmBox('今天已有饮食记录，复制昨日会覆盖它们，确定继续吗？', doDiet);
+    else doDiet();
+  }
+}
+
+/* ---------- 饮食模式 ---------- */
+function detailDiet(ds){
+  var d = getDay('diet', ds);
+  var t = dietSummary(ds);
+  var g = data.settings.goals;
+  function gcard(key, label, unit, actual, target, hl){
+    return '<div class="sum' + (hl ? ' hl' : '') + '">' +
+        '<div class="k">' + label + '<button class="gear" data-goal="' + key + '" title="修改目标">⚙</button></div>' +
+        '<div class="v"><span class="now ' + goalState(actual, target) + '">' + actual + '</span>' +
+        '<span class="goal">/' + target + '</span><span>' + unit + '</span></div>' +
+      '</div>';
+  }
+  var html =
+    '<div class="sum-cards">' +
+      gcard('kcal', '总卡路里', 'kcal', t.kcal, g.kcal, false) +
+      gcard('carb', '碳水', 'g', t.carb, g.carb, false) +
+      gcard('fat', '脂肪', 'g', t.fat, g.fat, false) +
+      gcard('protein', '蛋白质', 'g', t.protein, g.protein, true) +
+    '</div>' + copyRowHtml('diet', ds) + waterCardHtml(ds);
+  MEALS.forEach(function(m){
+    var list = d[m.key];
+    html += '<div class="block"><div class="block-head"><h3>' + m.name + '</h3>' +
+            '<button class="btn primary sm" data-add="' + m.key + '">+ 添加食物</button></div><div class="block-body">';
+    if(!list.length){
+      html += '<div class="empty-tip">未记录' + m.name + '</div>';
+    }else{
+      html += '<div class="items">';
+      list.forEach(function(it){
+        html += '<div class="item"><div class="item-main">' +
+                  '<div class="item-name">' + esc(it.name) + (it.amount ? ' <span style="font-weight:400;color:var(--muted)">· ' + esc(it.amount) + '</span>' : '') + '</div>' +
+                  '<div class="item-meta">' +
+                    '<span>热量 <em>' + num(it.kcal) + '</em> kcal</span>' +
+                    '<span>碳水 <em>' + num(it.carb) + '</em> g</span>' +
+                    '<span>脂肪 <em>' + num(it.fat) + '</em> g</span>' +
+                    '<span>蛋白 <em>' + num(it.protein) + '</em> g</span>' +
+                  '</div>' +
+                '</div><div class="item-ops">' +
+                  '<button class="btn sm" data-edit="' + m.key + '" data-id="' + it.id + '">编辑</button>' +
+                  '<button class="btn sm danger" data-del="' + m.key + '" data-id="' + it.id + '">删除</button>' +
+                '</div></div>';
+      });
+      html += '</div>';
+    }
+    html += '</div></div>';
+  });
+  return html;
+}
+
+/* ---------- 学习模式 ---------- */
+function detailStudy(ds){
+  var d = getDay('study', ds);
+  var s = studySummary(ds);
+  var html =
+    '<div class="sum-cards">' +
+      '<div class="sum"><div class="k">学习总时长</div><div class="v">' + s.minutes + '<span>min</span></div></div>' +
+      '<div class="sum"><div class="k">条目数</div><div class="v">' + d.items.length + '<span>条</span></div></div>' +
+    '</div>';
+  html += '<div class="block"><div class="block-head"><h3>学习条目</h3>' +
+          '<button class="btn primary sm" data-add="items">+ 添加学习记录</button></div><div class="block-body">';
+  if(!d.items.length){
+    html += '<div class="empty-tip">还没有学习记录，点右上角添加（科目 / 时长 / 备注）</div>';
+  }else{
+    html += '<div class="items">';
+    d.items.forEach(function(it){
+      html += '<div class="item"><div class="item-main">' +
+                '<div class="item-name">' + esc(it.subject) + '</div>' +
+                '<div class="item-meta"><span>时长 <em>' + num(it.minutes) + '</em> min</span></div>' +
+                (it.note ? '<div class="item-note">' + esc(it.note) + '</div>' : '') +
+              '</div><div class="item-ops">' +
+                '<button class="btn sm" data-edit="items" data-id="' + it.id + '">编辑</button>' +
+                '<button class="btn sm danger" data-del="items" data-id="' + it.id + '">删除</button>' +
+              '</div></div>';
+    });
+    html += '</div>';
+  }
+  return html + '</div></div>';
+}
+
+/* 详情区事件绑定 */
+function bindDetailEvents(){
+  var box = $('detailBox');
+  box.querySelectorAll('[data-add]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openAddForm(btn.getAttribute('data-add')); });
+  });
+  box.querySelectorAll('[data-edit]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openEditForm(btn.getAttribute('data-edit'), btn.getAttribute('data-id'));
+    });
+  });
+  box.querySelectorAll('[data-del]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var kind = btn.getAttribute('data-del'), id = btn.getAttribute('data-id');
+      confirmBox('确定删除这条记录吗？删除后不可恢复。', function(){
+        removeItem(kind, id);
+      });
+    });
+  });
+  // 体重
+  var wAdd = $('wAdd');
+  if(wAdd) wAdd.addEventListener('click', addWeight);
+  var rangeSeg = $('rangeSeg');
+  if(rangeSeg){
+    rangeSeg.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click', function(){
+        data.settings.chartRange = b.getAttribute('data-range');
+        save(); renderDetail();
+      });
+    });
+  }
+  box.querySelectorAll('[data-wdel]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var ds = btn.getAttribute('data-wdel');
+      confirmBox('删除 ' + ds + ' 的体重记录？', function(){
+        data.weights = data.weights.filter(function(w){ return w.date !== ds; });
+        save(); renderDetail(); renderCalendar(); toast('已删除体重记录', 'ok');
+      });
+    });
+  });
+  // 训练部位多选标签
+  box.querySelectorAll('[data-part]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var p = btn.getAttribute('data-part');
+      var day = ensureDay('fitness', ymd(selected));
+      if(!day.parts) day.parts = [];
+      var i = day.parts.indexOf(p);
+      if(i >= 0) day.parts.splice(i, 1); else day.parts.push(p);
+      save(); renderAll();
+      toast(i >= 0 ? ('已取消部位「' + p + '」') : ('已记录部位「' + p + '」'), 'ok');
+    });
+  });
+  // 无氧条目的组间追踪器操作
+  box.querySelectorAll('[data-act]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var act = btn.getAttribute('data-act'), id = btn.getAttribute('data-id');
+      if(act === 'main')  onStrengthMain(id);
+      else if(act === 'skip')  onStrengthSkip(id);
+      else if(act === 'reset') onStrengthReset(id);
+      else if(act === 'complete-cardio') onCardioComplete(id);
+      else if(act === 'uncomplete-cardio') onCardioUncomplete(id);
+    });
+  });
+
+  /* ---- 饮水 ---- */
+  box.querySelectorAll('[data-water]').forEach(function(btn){
+    btn.addEventListener('click', function(){ addWater(btn.getAttribute('data-water')); });
+  });
+  var wCustom = $('wCustom'), wAddCustom = $('wAddCustom'), wReset = $('wReset'), wGoalBtn = $('wGoalBtn');
+  if(wAddCustom) wAddCustom.addEventListener('click', function(){ addWater(wCustom.value); });
+  if(wCustom) wCustom.addEventListener('keydown', function(e){ if(e.key === 'Enter') addWater(wCustom.value); });
+  if(wReset)  wReset.addEventListener('click', resetWater);
+  if(wGoalBtn) wGoalBtn.addEventListener('click', function(){
+    showForm({ title:'修改每日饮水目标', okText:'保存',
+      fields:[ { key:'waterGoal', label:'每日目标（ml）', type:'number', min:1, step:100 } ],
+      values:{ waterGoal: waterGoal() },
+      onOk:function(v){
+        data.settings.waterGoal = Math.max(1, Math.round(num(v.waterGoal) || 2000));
+        save(); renderDetail(); toast('饮水目标已更新为 ' + data.settings.waterGoal + ' ml', 'ok');
+      }
+    });
+  });
+
+  /* ---- 经期 ---- */
+  var pStart = $('pStartBtn'), pEnd = $('pEndBtn');
+  if(pStart) pStart.addEventListener('click', function(){ recordPeriodStart(ymd(selected)); });
+  if(pEnd)   pEnd.addEventListener('click', function(){ recordPeriodEnd(ymd(selected)); });
+  // 周期长度已改为自动计算，这里只保留「默认经期天数」
+  var pLenEl = $('pLen');
+  if(pLenEl) pLenEl.addEventListener('change', function(){
+    var v = Math.max(3, Math.min(10, Math.round(num(pLenEl.value)) || 5));
+    data.period.settings.periodLen = v;
+    pLenEl.value = v;
+    save(); renderAll(); toast('默认经期天数已保存', 'ok');
+  });
+  box.querySelectorAll('[data-pdel]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-pdel');
+      var r = null;
+      data.period.records.forEach(function(x){ if(x.id === id) r = x; });
+      if(!r) return;
+      confirmBox('删除 ' + r.start + ' 这次月经记录？', function(){
+        data.period.records = data.period.records.filter(function(x){ return x.id !== id; });
+        save(); renderAll(); toast('已删除记录', 'ok');
+      });
+    });
+  });
+
+  /* ---- 营养目标（点齿轮修改） ---- */
+  box.querySelectorAll('[data-goal]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openGoalForm(); });
+  });
+  /* ---- 复制昨日记录 ---- */
+  var cp = $('copyPrev');
+  if(cp) cp.addEventListener('click', copyYesterday);
+}
+/* 每日营养目标设置表单 */
+function openGoalForm(){
+  var g = data.settings.goals;
+  showForm({
+    title:'每日营养目标',
+    okText:'保存',
+    fields:[
+      { key:'kcal',    label:'总卡路里目标（kcal）', type:'number', min:0, step:50 },
+      { key:'carb',    label:'碳水目标（g）',        type:'number', min:0, step:5 },
+      { key:'fat',     label:'脂肪目标（g）',        type:'number', min:0, step:1 },
+      { key:'protein', label:'蛋白质目标（g）',      type:'number', min:0, step:5 }
+    ],
+    values: g,
+    onOk: function(v){
+      data.settings.goals = {
+        kcal:    Math.max(0, Math.round(num(v.kcal))),
+        carb:    Math.max(0, Math.round(num(v.carb))),
+        fat:     Math.max(0, Math.round(num(v.fat))),
+        protein: Math.max(0, Math.round(num(v.protein)))
+      };
+      save(); renderDetail(); toast('营养目标已保存，后续每天沿用', 'ok');
+    }
+  });
+}
+/* 把某天记录为一次月经开始（Day 1）—— 存在未结束的经期时不允许重复开始 */
+function recordPeriodStart(ds){
+  var open = openRecord();
+  if(open){
+    toast('上次经期（' + open.start + '）还没结束，请先点「记录月经结束」', 'warn');
+    return;
+  }
+  // 兜底：该日期已落在某段经期区间内时拒绝新建，避免重复记录
+  var hit = periodRecordAt(ds);
+  if(hit){
+    toast(ds + ' 已在经期记录内（' + hit.start + ' ～ ' + (hit.end || '进行中') + '），请先删除该记录再录', 'warn');
+    return;
+  }
+  data.period.records.push({ id: uid(), start: ds, end: null, days: 0 });
+  save(); renderAll();
+  toast('已记录 ' + ds + ' 为月经第 1 天，经期进行中', 'ok');
+}
+/* 把某天记录为本次月经结束日 —— 结束后记录闭合，按钮恢复为「记录月经开始」 */
+function recordPeriodEnd(ds){
+  var open = openRecord();
+  if(!open){ toast('当前没有进行中的经期', 'warn'); return; }
+  var d = diffDays(open.start, ds) + 1;
+  if(d < 1){ toast('结束日不能早于开始日 ' + open.start, 'warn'); return; }
+  open.end = ds;
+  open.days = d;
+  save(); renderAll();
+  toast('本次经期已结束，共 ' + d + ' 天', 'ok');
+}
+
+/* =====================================================================
+ *  增删改（健身 / 饮食 / 学习）
+ * ===================================================================== */
+function listOf(kind){
+  var ds = ymd(selected);
+  var d = getDay(mode, ds);
+  if(mode === 'fitness') return d[kind] || [];
+  if(mode === 'diet')    return d[kind] || [];
+  return d.items || [];
+}
+/* ---------- 常用食物 / 常用动作 / 常用有氧 收藏夹 ---------- */
+var FAV_KINDS = {
+  food:     { list:'favFoods',     title:'常用食物', keys:['name','amount','kcal','carb','fat','protein'] },
+  exercise: { list:'favExercises', title:'常用动作', keys:['name','sets','reps','weight','rest'] },
+  cardio:   { list:'favCardio',    title:'常用有氧', keys:['type','minutes','distance','calories'] }
+};
+function favListOf(kind){
+  var k = FAV_KINDS[kind];
+  if(!k) return [];
+  if(!data[k.list]) data[k.list] = [];
+  return data[k.list];
+}
+/* 有氧模板用 type 当名称，其余用 name */
+function favNameOf(x){ return (x.name !== undefined && x.name !== '') ? x.name : (x.type || ''); }
+/* 收藏项的默认参数提示（hover 时显示） */
+function favHintOf(x, kind){
+  var p = [];
+  if(kind === 'exercise'){
+    if(x.sets)   p.push(x.sets + ' 组');
+    if(x.reps)   p.push(x.reps + ' 次');
+    if(x.weight) p.push(x.weight + ' kg');
+    if(x.rest)   p.push('歇 ' + x.rest + 's');
+  }else if(kind === 'cardio'){
+    if(x.minutes)  p.push(x.minutes + ' min');
+    if(x.distance) p.push(x.distance + ' km');
+    if(x.calories) p.push(x.calories + ' kcal');
+  }else{ // food
+    if(x.amount)   p.push(x.amount);
+    if(x.kcal)     p.push(x.kcal + ' kcal');
+    if(x.carb)     p.push('碳 ' + x.carb);
+    if(x.protein)  p.push('蛋 ' + x.protein);
+    if(x.fat)      p.push('脂 ' + x.fat);
+  }
+  return p.join(' × ');
+}
+function favTagsHtml(kind){
+  var list = favListOf(kind);
+  if(!list.length) return '';
+  var t = FAV_KINDS[kind];
+  return '<div class="fav-box"><div class="fav-t">' + t.title + '（点标签即填入表单，hover 看默认参数，点 × 删除）</div>' +
+    '<div class="fav-tags">' + list.map(function(x, i){
+      var hint = favHintOf(x, kind);
+      return '<span class="fav-tag" data-fav="' + i + '"' + (hint ? ' title="' + esc(hint) + '"' : '') + '>' + esc(favNameOf(x)) + '<b data-favdel="' + i + '">×</b></span>';
+    }).join('') + '</div></div>';
+}
+/* 当前添加表单对应的收藏类型 */
+function favKindOf(kind){
+  if(mode === 'diet') return 'food';
+  if(mode === 'fitness' && kind === 'strength') return 'exercise';
+  if(mode === 'fitness' && kind === 'cardio')   return 'cardio';
+  return null;
+}
+/* 每打开一次表单就绑定一次：监听挂在本次生成的 DOM 上，弹窗关闭后元素销毁，不会累积监听器 */
+function bindFavForm(body, kind){
+  if(!kind) return;
+  var wrap = body.querySelector('#favWrap');
+  var star = body.querySelector('#favStar');
+  var keys = FAV_KINDS[kind].keys;
+
+  function render(){
+    if(!wrap) return;
+    wrap.innerHTML = favTagsHtml(kind);
+  }
+  function fill(f){
+    keys.forEach(function(k){
+      var el = body.querySelector('[data-k="' + k + '"]');
+      if(el && f[k] !== undefined && f[k] !== null) el.value = f[k];
+    });
+    toast('已填入「' + favNameOf(f) + '」', 'ok');
+  }
+  function onClick(e){
+    // 先判 ×（嵌在标签内部），再判标签本身
+    var del = e.target.closest('[data-favdel]');
+    if(del){
+      var i = +del.getAttribute('data-favdel');
+      var gone = favListOf(kind)[i];
+      favListOf(kind).splice(i, 1);
+      save(); render();
+      toast('已删除收藏「' + (gone ? favNameOf(gone) : '') + '」', 'ok');
+      return;
+    }
+    var tag = e.target.closest('[data-fav]');
+    if(tag){
+      var f = favListOf(kind)[+tag.getAttribute('data-fav')];
+      if(f) fill(f);
+    }
+  }
+  if(wrap){
+    wrap.addEventListener('click', onClick);
+  }
+  if(star){
+    star.addEventListener('click', function(){
+      var vals = {};
+      keys.forEach(function(k){
+        var el = body.querySelector('[data-k="' + k + '"]');
+        var raw = el ? el.value.trim() : '';
+        vals[k] = (k === 'name' || k === 'amount' || k === 'type') ? raw : (raw === '' ? '' : num(raw));
+      });
+      if(!(vals.name || vals.type)){ toast('请先填写名称再收藏', 'warn'); return; }
+      vals.id = uid();
+      favListOf(kind).push(vals);
+      save(); render();
+      toast('已收藏「' + favNameOf(vals) + '」，下次点标签即可套用', 'ok');
+    });
+  }
+}
+
+function openAddForm(kind){
+  var f = fieldsOf(kind);
+  var fk = favKindOf(kind);
+  // 星形收藏按钮放在「名称输入框」正下方
+  var inj = {};
+  if(fk) inj[FAV_KINDS[fk].keys[0]] =
+    '<div class="fav-star"><button type="button" class="btn sm" id="favStar">⭐ 收藏为' + FAV_KINDS[fk].title + '</button></div>';
+  showForm({
+    title: '添加' + f.label,
+    fields: f.fields,
+    values: f.def,
+    inject: inj,
+    extraTop: fk ? '<div id="favWrap">' + favTagsHtml(fk) + '</div>' : '',
+    onMount: function(body){ bindFavForm(body, fk); },
+    onOk: function(v){
+    var day = ensureDay(mode, ymd(selected));
+    if(mode === 'diet'){ if(!day[kind]) day[kind] = []; }
+    else if(mode === 'fitness'){ if(!day[kind]) day[kind] = []; }
+    else { if(!day.items) day.items = []; }
+    v.id = uid();
+    // 无氧动作初始化追踪器字段：实际完成组数 / 起止时间 / 实测耗时 / 组歇结束时间
+    if(mode === 'fitness' && kind === 'strength'){
+      v.done = 0; v.startedAt = 0; v.finishedAt = 0; v.totalSec = 0; v.restEndAt = 0;
+    }
+    // 有氧项目默认未完成，需点「完成」才计入汇总
+    if(mode === 'fitness' && kind === 'cardio'){ v.done = 0; }
+    pushItem(kind, v);
+    save(); renderAll(); toast('已添加记录', 'ok');
+  }});
+}
+function pushItem(kind, v){
+  var ds = ymd(selected);
+  var day = ensureDay(mode, ds);
+  if(mode === 'diet'){ day[kind].push(v); }
+  else if(mode === 'fitness'){ day[kind].push(v); }
+  else { day.items.push(v); }
+}
+function openEditForm(kind, id){
+  var list = listOf(kind);
+  var it = null;
+  for(var i=0;i<list.length;i++){ if(list[i].id === id){ it = list[i]; break; } }
+  if(!it){ toast('记录不存在', 'err'); return; }
+  var f = fieldsOf(kind);
+  showForm({ title:'编辑' + f.label, fields:f.fields, values:it, okText:'保存修改', onOk:function(v){
+    for(var k in v) it[k] = v[k];
+    save(); renderAll(); toast('已保存修改', 'ok');
+  }});
+}
+function removeItem(kind, id){
+  var ds = ymd(selected);
+  var day = ensureDay(mode, ds);
+  if(mode === 'diet')       day[kind] = day[kind].filter(function(x){ return x.id !== id; });
+  else if(mode === 'fitness') day[kind] = day[kind].filter(function(x){ return x.id !== id; });
+  else                      day.items = day.items.filter(function(x){ return x.id !== id; });
+  cleanupDay(mode, ds);
+  save(); renderAll(); toast('已删除记录', 'ok');
+}
+/* 各类记录的表单字段定义 */
+function fieldsOf(kind){
+  if(mode === 'fitness' && kind === 'strength'){
+    return { label:'无氧动作', fields:[
+      { key:'name',    label:'动作名称', ph:'如 深蹲 / 卧推', required:true },
+      { key:'sets',    label:'总组数',   type:'number', min:0, step:1 },
+      { key:'reps',    label:'每组次数', type:'number', min:0, step:1 },
+      { key:'weight',  label:'重量(kg)', type:'number', min:0, step:0.5 },
+      { key:'rest',    label:'组间休息时长(秒)', type:'number', min:0, step:5 },
+      { key:'minutes', label:'总时长(分钟，留空自动估算)', type:'number', min:0, step:1 },
+      { key:'note',    label:'备注', type:'textarea', ph:'选填' }
+    ], def:{ sets: 3, rest: data.settings.restSeconds } };
+  }
+  if(mode === 'fitness' && kind === 'cardio'){
+    return { label:'有氧项目', fields:[
+      { key:'type',     label:'运动类型', ph:'如 跑步 / 椭圆机 / 跳绳', required:true },
+      { key:'minutes',  label:'时长(分钟)', type:'number', min:0, step:1 },
+      { key:'distance', label:'距离(km，选填)', type:'number', min:0, step:0.1 },
+      { key:'calories', label:'消耗(kcal，选填)', type:'number', min:0, step:1 },
+      { key:'note',     label:'备注', type:'textarea', ph:'选填' }
+    ], def:{} };
+  }
+  if(mode === 'diet'){
+    var mn = '食物';
+    for(var i=0;i<MEALS.length;i++) if(MEALS[i].key === kind) mn = MEALS[i].name + '食物';
+    return { label:mn, fields:[
+      { key:'name',    label:'食物名称', ph:'如 鸡胸肉 / 米饭', required:true },
+      { key:'amount',  label:'份量 / 重量', ph:'如 150g / 1碗' },
+      { key:'kcal',    label:'热量(kcal)', type:'number', min:0, step:1 },
+      { key:'carb',    label:'碳水(g)',    type:'number', min:0, step:0.1 },
+      { key:'fat',     label:'脂肪(g)',    type:'number', min:0, step:0.1 },
+      { key:'protein', label:'蛋白质(g)',  type:'number', min:0, step:0.1 }
+    ], def:{} };
+  }
+  return { label:'学习记录', fields:[
+    { key:'subject', label:'学习内容 / 科目', ph:'如 英语阅读 / 算法', required:true },
+    { key:'minutes', label:'学习时长(分钟)', type:'number', min:0, step:1 },
+    { key:'note',    label:'备注', type:'textarea', ph:'选填' }
+  ], def:{} };
+}
+
+/* =====================================================================
+ *  体重：录入 / 统计 / Canvas 曲线
+ * ===================================================================== */
+function sortedWeights(){
+  return data.weights.slice().sort(function(a,b){ return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); });
+}
+function addWeight(){
+  var ds = $('wDate').value || ymd(selected);
+  var kg = num($('wKg').value);
+  if(!kg || kg < 20 || kg > 300){ toast('请输入有效体重（20-300 kg）', 'warn'); return; }
+  var exist = null;
+  for(var i=0;i<data.weights.length;i++){ if(data.weights[i].date === ds){ exist = data.weights[i]; break; } }
+  if(exist){ exist.kg = Math.round(kg*10)/10; toast('已更新 ' + ds + ' 的体重', 'ok'); }
+  else{ data.weights.push({ date:ds, kg:Math.round(kg*10)/10 }); toast('已记录体重', 'ok'); }
+  save(); renderDetail(); renderCalendar();
+}
+function weightStatsHtml(){
+  var ws = sortedWeights();
+  if(!ws.length) return '<div style="font-size:12.5px;color:var(--muted)">还没有体重数据，录入第一条后自动生成曲线</div>';
+  var cur = ws[ws.length-1], prev = ws.length > 1 ? ws[ws.length-2] : null, first = ws[0];
+  function delta(a){
+    if(a === null) return '<span style="color:var(--muted)">—</span>';
+    var d = Math.round((cur.kg - a) * 10) / 10;
+    if(Math.abs(d) < 0.05) return '<span style="color:var(--muted)">持平 0 kg</span>';
+    return (d > 0 ? '<span style="color:#E8453C">↑ +' + d + ' kg</span>'
+                  : '<span style="color:#2FA84F">↓ ' + Math.abs(d) + ' kg</span>');
+  }
+  return '<div class="sum-cards" style="margin-bottom:0">' +
+      '<div class="sum"><div class="k">当前体重 (' + cur.date + ')</div><div class="v">' + cur.kg + '<span>kg</span></div></div>' +
+      '<div class="sum"><div class="k">较上次变化</div><div class="v" style="font-size:15px">' + delta(prev ? prev.kg : null) + '</div></div>' +
+      '<div class="sum"><div class="k">较初始变化 (' + first.date + ')</div><div class="v" style="font-size:15px">' + delta(first.kg) + '</div></div>' +
+    '</div>';
+}
+function weightListHtml(){
+  var ws = sortedWeights().reverse();
+  if(!ws.length) return '<div class="empty-tip">暂无记录</div>';
+  var h = '';
+  ws.forEach(function(w){
+    h += '<div class="w-item"><span>' + w.date + '</span><span><b>' + w.kg + '</b> kg ' +
+         '<button class="btn sm danger" data-wdel="' + w.date + '" style="margin-left:8px">删除</button></span></div>';
+  });
+  return h;
+}
+/* 周期色带的配色与图例（与经期模块颜色保持一致） */
+var BAND_COLOR = { period:'rgba(232,69,60,.17)', ovulation:'rgba(160,92,214,.17)', luteal:'rgba(245,166,35,.18)' };
+function periodLegendHtml(){
+  return '<div class="chart-legend">' +
+      '<span><i style="background:rgba(232,69,60,.55)"></i>红 = 经期</span>' +
+      '<span><i style="background:rgba(160,92,214,.55)"></i>紫 = 排卵期</span>' +
+      '<span><i style="background:rgba(245,166,35,.6)"></i>橙 = 黄体期</span>' +
+      '<span style="color:#9AA1AB">（体重受周期影响会波动，属正常现象）</span>' +
+    '</div>';
+}
+/* Canvas 手绘体重折线图 */
+function drawChart(){
+  var cv = $('wChart'); if(!cv) return;
+  var wrap = cv.parentElement;
+  var w = Math.max(240, wrap.clientWidth);
+  var h = 230;
+  var dpr = window.devicePixelRatio || 1;
+  cv.width = w * dpr; cv.height = h * dpr;
+  cv.style.width = w + 'px'; cv.style.height = h + 'px';
+  var ctx = cv.getContext('2d');
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, w, h);
+
+  var tip = $('chartTip');
+  var all = sortedWeights();
+  var pts = all;
+  if(data.settings.chartRange === '30'){
+    var limit = ymd(addDays(today(), -29));
+    pts = all.filter(function(p){ return p.date >= limit; });
+  }
+  if(tip) tip.hidden = pts.length > 0;
+  if(!pts.length) return;
+
+  var accent = getComputedStyle(document.body).getPropertyValue('--accent').trim() || '#FF7A45';
+  var padL = 46, padR = 14, padT = 16, padB = 30;
+  var cw = w - padL - padR, ch = h - padT - padB;
+
+  // 纵轴范围
+  var vals = pts.map(function(p){ return p.kg; });
+  var min = Math.min.apply(null, vals), max = Math.max.apply(null, vals);
+  if(max - min < 2){ var mid = (max + min) / 2; min = mid - 1; max = mid + 1; }
+  var lo = Math.floor((min - 0.5) * 2) / 2, hi = Math.ceil((max + 0.5) * 2) / 2;
+
+  /* ---- X 轴：按真实日期天数线性映射（关键修复） ----
+   * 横轴跨度 = 最早记录日 ~ 最新记录日的总天数；
+   * 每个点的 X = (该点日期 - 起始日期) / 总天数 × 图表宽度，
+   * 因此隔几天的两个点，像素距离就对应几天，不再是等距排开。
+   * 「最近 30 天」视图下跨度固定为 30 天，没有记录的日期留空。
+   */
+  var dStart, dEnd;
+  if(data.settings.chartRange === '30'){
+    dEnd = pts[pts.length - 1].date;
+    dStart = ymd(addDays(parseYmd(dEnd), -29));
+  }else{
+    dStart = pts[0].date;
+    dEnd = pts[pts.length - 1].date;
+  }
+  var spanDays = Math.max(1, diffDays(dStart, dEnd));
+  var single = (pts.length === 1);
+  function XD(dstr){
+    if(single) return padL + cw / 2;                 // 只有一个点时居中
+    var t = diffDays(dStart, dstr) / spanDays;
+    if(t < 0) t = 0; if(t > 1) t = 1;
+    return padL + cw * t;
+  }
+  function Y(v){ return padT + ch * (1 - (v - lo) / (hi - lo)); }
+
+  /* ---- 背景周期色带：经期 / 排卵期 / 黄体期 ---- */
+  if((data.period.records || []).length){
+    var dCur = dStart, guard = 0;
+    while(dCur <= dEnd && guard < 900){
+      var pc = periodCalc(dCur);
+      if(pc && BAND_COLOR[pc.phase]){
+        var bx1 = XD(dCur), bx2 = XD(ymd(addDays(parseYmd(dCur), 1)));
+        ctx.fillStyle = BAND_COLOR[pc.phase];
+        ctx.fillRect(bx1, padT, Math.max(1.5, bx2 - bx1), ch);
+      }
+      dCur = ymd(addDays(parseYmd(dCur), 1));
+      guard++;
+    }
+  }
+
+  // 纵向网格 + 纵轴刻度（纵轴仍按体重数值自适应）
+  ctx.font = '11px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif';
+  ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+  for(var g=0; g<=4; g++){
+    var v = lo + (hi - lo) * g / 4;
+    var y = Y(v);
+    ctx.strokeStyle = '#EEF1F5'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(w - padR, y); ctx.stroke();
+    ctx.fillStyle = '#9AA1AB';
+    ctx.fillText(v.toFixed(1), padL - 8, y);
+  }
+
+  /* ---- X 轴刻度：按数据密度自动决定标注几个日期 ---- */
+  var tickN = Math.min(6, Math.max(2, Math.round(cw / 80)));
+  var ticks = [], seen = {};
+  for(var ti=0; ti<tickN; ti++){
+    var frac = tickN === 1 ? 0 : ti / (tickN - 1);
+    var td = ymd(addDays(parseYmd(dStart), Math.round(frac * spanDays)));
+    if(seen[td]) continue;
+    seen[td] = 1; ticks.push(td);
+  }
+  ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+  ticks.forEach(function(td){
+    var tx = XD(td);
+    ctx.strokeStyle = '#F2F4F7'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(tx, padT); ctx.lineTo(tx, padT + ch); ctx.stroke();
+    ctx.fillStyle = '#9AA1AB';
+    ctx.fillText(td.slice(5), tx, padT + ch + 8);
+  });
+
+  // 折线（各点按真实日期落位）
+  ctx.strokeStyle = accent; ctx.lineWidth = 2.2; ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+  ctx.beginPath();
+  pts.forEach(function(p, i){ if(i === 0) ctx.moveTo(XD(p.date), Y(p.kg)); else ctx.lineTo(XD(p.date), Y(p.kg)); });
+  ctx.stroke();
+  // 面积（淡色）
+  if(pts.length > 1){
+    ctx.lineTo(XD(pts[pts.length-1].date), padT + ch);
+    ctx.lineTo(XD(pts[0].date), padT + ch);
+    ctx.closePath();
+    ctx.fillStyle = hexToRgba(accent, .10); ctx.fill();
+  }
+  // 数据点
+  pts.forEach(function(p){
+    var x = XD(p.date), y = Y(p.kg);
+    ctx.beginPath(); ctx.arc(x, y, 3.6, 0, Math.PI*2);
+    ctx.fillStyle = '#fff'; ctx.fill();
+    ctx.lineWidth = 2; ctx.strokeStyle = accent; ctx.stroke();
+  });
+}
+function hexToRgba(hex, a){
+  var h = String(hex).replace('#','');
+  if(h.length === 3) h = h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+  var r = parseInt(h.slice(0,2),16), g = parseInt(h.slice(2,4),16), b = parseInt(h.slice(4,6),16);
+  return 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
+}
+
+/* =====================================================================
+ *  组间追踪器：内嵌在每个无氧动作条目里
+ *  流程：开始第 1 组 → 完成第 1 组 → 自动组歇倒计时 → 提醒第 2 组 → … → 全部完成
+ * ===================================================================== */
+var audioCtx = null;
+
+/* WebAudio 提示音，不引入任何音频文件；浏览器不支持时静默降级 */
+function beep(times){
+  try{
+    var Ctx = window.AudioContext || window.webkitAudioContext;
+    if(!Ctx) return;
+    if(!audioCtx) audioCtx = new Ctx();
+    if(audioCtx.state === 'suspended' && audioCtx.resume) audioCtx.resume();
+    var n = times || 3;
+    for(var i=0; i<n; i++){
+      (function(idx){
+        var osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.value = (idx === n - 1) ? 1046 : 880;   // 最后一声音调更高
+        var t0 = audioCtx.currentTime + idx * 0.28;
+        gain.gain.setValueAtTime(0.0001, t0);
+        gain.gain.exponentialRampToValueAtTime(0.28, t0 + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.22);
+        osc.connect(gain); gain.connect(audioCtx.destination);
+        osc.start(t0); osc.stop(t0 + 0.24);
+      })(i);
+    }
+  }catch(e){ /* 静默降级，不影响主流程 */ }
+}
+/* 条目颜色闪烁提醒 */
+function flashItem(id){
+  var el = document.getElementById('stitem-' + id);
+  if(!el) return;
+  el.classList.remove('flash');
+  void el.offsetWidth;                       // 强制重排，保证动画可重复触发
+  el.classList.add('flash');
+  setTimeout(function(){ el.classList.remove('flash'); }, 1500);
+}
+/* 按 id 找到当天某个无氧动作 */
+function findStrength(ds, id){
+  var d = data.fitness && data.fitness[ds];
+  if(!d) return null;
+  for(var i=0; i<d.strength.length; i++) if(d.strength[i].id === id) return d.strength[i];
+  return null;
+}
+/* 主按钮：开始第 1 组 / 完成第 N 组 */
+function onStrengthMain(id){
+  var ds = ymd(selected);
+  var it = findStrength(ds, id);
+  if(!it){ toast('动作不存在', 'err'); return; }
+  var plan = num(it.sets);
+  if(plan <= 0){ toast('请先把「计划组数」设为大于 0', 'warn'); return; }
+  var done = num(it.done);
+  if(done === 0 && !it.startedAt){           // 第一次点击：开始第 1 组
+    it.startedAt = Date.now();
+    save(); renderDetail();
+    toast(it.name + ' 第 1 组，开始！', 'ok');
+    return;
+  }
+  done += 1;                                  // 完成当前这一组
+  it.done = done;
+  it.finishedAt = Date.now();
+  if(done >= plan){                           // 已完成全部计划组数
+    it.totalSec = Math.round((it.finishedAt - (it.startedAt || it.finishedAt)) / 1000);
+    it.restEndAt = 0;
+    save(); renderAll();
+    toast('🎉 ' + it.name + ' 全部完成！' + plan + ' 组，实测耗时 ' + fmtDuration(it.totalSec), 'ok');
+    beep(2); flashItem(id);
+    return;
+  }
+  startRest(it);                              // 还没到最后一组 → 自动进入组歇
+}
+/* 启动该动作的组歇倒计时（restEndAt 落盘，刷新页面也能继续计时） */
+function startRest(it){
+  var sec = Math.max(0, Math.round(num(it.rest)));
+  if(sec <= 0){                               // 组歇为 0 秒：直接提示下一组
+    it.restEndAt = 0;
+    save(); renderDetail();
+    toast(it.name + ' 第 ' + (num(it.done) + 1) + ' 组，可以开始了', 'ok');
+    beep(); flashItem(it.id);
+    return;
+  }
+  it.restEndAt = Date.now() + sec * 1000;
+  it.restTotal = sec;
+  save(); renderDetail();
+  toast('休息 ' + sec + ' 秒，随后开始第 ' + (num(it.done) + 1) + ' 组');
+}
+/* 跳过本组休息 */
+function onStrengthSkip(id){
+  var it = findStrength(ymd(selected), id);
+  if(!it) return;
+  it.restEndAt = 0;
+  var nm = it.name, next = num(it.done) + 1;
+  save(); renderDetail();
+  toast(nm + ' 第 ' + next + ' 组，可以开始了', 'ok');
+  beep(); flashItem(id);
+}
+/* 中断 / 重置该动作今天的训练 */
+function onStrengthReset(id){
+  var it = findStrength(ymd(selected), id);
+  if(!it) return;
+  confirmBox('中断并重置「' + it.name + '」今天的训练进度？已完成的组数会清零。', function(){
+    it.done = 0; it.startedAt = 0; it.finishedAt = 0; it.totalSec = 0; it.restEndAt = 0;
+    save(); renderAll();
+    toast('已重置「' + it.name + '」的训练进度', 'ok');
+  });
+}
+/* 有氧：找到某天的某条记录 */
+function findCardio(ds, id){
+  var day = data.fitness[ds]; if(!day) return null;
+  for(var i=0;i<day.cardio.length;i++){ if(day.cardio[i].id === id) return day.cardio[i]; }
+  return null;
+}
+/* 有氧「完成」：标记 done=1，计入当日有氧时长与消耗（实际用时即录入的时长，可在编辑里修改） */
+function onCardioComplete(id){
+  var it = findCardio(ymd(selected), id);
+  if(!it){ toast('记录不存在', 'err'); return; }
+  it.done = 1;
+  save(); renderAll();
+  toast('已记录「' + (it.type || '有氧') + '」完成' +
+        (num(it.minutes) ? '（' + num(it.minutes) + ' min）' : '') + '，已计入汇总', 'ok');
+}
+/* 有氧「撤销完成」：取消 done 标记，移出汇总 */
+function onCardioUncomplete(id){
+  var it = findCardio(ymd(selected), id);
+  if(!it) return;
+  it.done = 0;
+  save(); renderAll();
+  toast('已撤销「' + (it.type || '有氧') + '」的完成状态', 'ok');
+}
+/* 每 200ms 刷新处于休息中的条目，倒计时结束时提示 + 声音 + 闪烁 */
+function tickTrackers(){
+  var curDs = ymd(selected);
+  var ended = false, needRender = false, notify = null;
+  // 遍历全部日期：即使切到饮食/学习模式或翻到别的日期，组歇也照常走完并提醒
+  Object.keys(data.fitness || {}).forEach(function(ds){
+    var d = data.fitness[ds];
+    if(!d || !d.strength) return;
+    d.strength.forEach(function(it){
+      if(!it.restEndAt) return;
+      var left = Math.max(0, it.restEndAt - Date.now());
+      if(ds === curDs && mode === 'fitness'){      // 只有当前显示的那天需要刷新 DOM
+        var btn = document.getElementById('stbtn-' + it.id);
+        var bar = document.getElementById('stbar-' + it.id);
+        if(btn) btn.textContent = '休息中 ' + Math.ceil(left / 1000) + 's';
+        if(bar && bar.firstChild){
+          var total = num(it.restTotal || it.rest || 60) * 1000;
+          bar.firstChild.style.width = (left / total * 100) + '%';
+        }
+      }
+      if(left <= 0){
+        it.restEndAt = 0;
+        ended = true;
+        if(ds === curDs) needRender = true;
+        notify = { name: it.name, next: num(it.done) + 1, id: it.id, ds: ds };
+      }
+    });
+  });
+  if(!ended) return;
+  save();
+  if(needRender) renderDetail();
+  if(notify){
+    toast(notify.name + ' 第 ' + notify.next + ' 组，可以开始了', 'ok');
+    beep(); flashItem(notify.id);
+  }
+}
+setInterval(tickTrackers, 200);
+
+/* =====================================================================
+ *  模态框 / 表单 / 确认框（替代 alert / confirm / prompt）
+ * ===================================================================== */
+var modalOkHandler = null;
+function openModal(){
+  $('modalMask').hidden = false;
+}
+function closeModal(){
+  $('modalMask').hidden = true;
+  modalOkHandler = null;
+  $('modalCancel').hidden = false;   // 还原底部按钮（自定义弹窗可能临时隐藏）
+  $('modalOk').hidden = false;
+}
+/* 通用表单：fields=[{key,label,type,ph,required,min,step}] */
+function showForm(opt){
+  $('modalTitle').textContent = opt.title || '编辑';
+  $('modalMsg').hidden = true;
+  var body = $('modalBody');
+  body.hidden = false;
+  var html = opt.extraTop || '';                 // 收藏夹标签（字段上方）
+  opt.fields.forEach(function(f){
+    var v = (opt.values && opt.values[f.key] !== undefined && opt.values[f.key] !== null) ? opt.values[f.key] : '';
+    if(f.type === 'textarea'){
+      html += '<label class="fld"><span>' + esc(f.label) + '</span><textarea data-k="' + f.key + '" placeholder="' + esc(f.ph || '') + '">' + esc(v) + '</textarea></label>';
+    }else{
+      html += '<label class="fld"><span>' + esc(f.label) + '</span><input type="' + (f.type || 'text') + '" data-k="' + f.key +
+              '" value="' + esc(v) + '" placeholder="' + esc(f.ph || '') + '"' +
+              (f.min !== undefined ? ' min="' + f.min + '"' : '') + (f.step ? ' step="' + f.step + '"' : '') + '></label>';
+    }
+    // 指定字段后面追加内容（例如名称输入框下方的「收藏」星形按钮）
+    if(opt.inject && opt.inject[f.key]) html += opt.inject[f.key];
+  });
+  body.innerHTML = html;
+  $('modalOk').textContent = opt.okText || '保存';
+  if(opt.onMount) opt.onMount(body);             // 表单渲染完成后绑定交互
+  modalOkHandler = function(){
+    var vals = {}, ok = true;
+    opt.fields.forEach(function(f){
+      var el = body.querySelector('[data-k="' + f.key + '"]');
+      var raw = el ? el.value.trim() : '';
+      if(f.required && raw === ''){ ok = false; toast('请填写「' + f.label + '」', 'warn'); return; }
+      vals[f.key] = (f.type === 'number') ? (raw === '' ? '' : num(raw)) : raw;
+    });
+    if(!ok) return;
+    closeModal();
+    opt.onOk(vals);
+  };
+  openModal();
+  var first = body.querySelector('input,textarea');
+  if(first) setTimeout(function(){ first.focus(); }, 60);
+}
+/* 确认框 */
+function confirmBox(msg, onOk){
+  $('modalTitle').textContent = '请确认';
+  $('modalBody').hidden = true;
+  var m = $('modalMsg');
+  m.hidden = false; m.textContent = msg;
+  $('modalOk').textContent = '确定';
+  modalOkHandler = function(){ closeModal(); onOk(); };
+  openModal();
+}
+$('modalCancel').addEventListener('click', closeModal);
+$('modalOk').addEventListener('click', function(){ if(modalOkHandler) modalOkHandler(); });
+$('modalMask').addEventListener('click', function(e){ if(e.target === $('modalMask')) closeModal(); });
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape' && !$('modalMask').hidden) closeModal();
+});
+
+/* =====================================================================
+ *  月份概览（右侧小卡）
+ * ===================================================================== */
+function renderMonthStat(){
+  var y = cursor.getFullYear(), m = cursor.getMonth();
+  var days = new Date(y, m+1, 0).getDate();
+  var cnt = 0, rows = '';
+  if(mode === 'fitness'){
+    var sm = 0, cm = 0, kcal = 0;
+    for(var d=1; d<=days; d++){
+      var ds = y + '-' + pad2(m+1) + '-' + pad2(d);
+      if(hasRecord('fitness', ds)) cnt++;
+      var s = fitSummary(ds); sm += s.strengthMin; cm += s.cardioMin; kcal += s.kcal;
+    }
+    rows = '<div class="stat-row"><span>训练天数</span><b>' + cnt + ' 天</b></div>' +
+           '<div class="stat-row"><span>无氧累计</span><b>' + Math.round(sm) + ' min</b></div>' +
+           '<div class="stat-row"><span>有氧累计</span><b>' + Math.round(cm) + ' min</b></div>' +
+           '<div class="stat-row"><span>消耗累计</span><b>' + kcal + ' kcal</b></div>';
+  }else if(mode === 'diet'){
+    var tk = 0, tp = 0, rec = 0;
+    for(var d2=1; d2<=days; d2++){
+      var ds2 = y + '-' + pad2(m+1) + '-' + pad2(d2);
+      if(hasRecord('diet', ds2)){ rec++; var t = dietSummary(ds2); tk += t.kcal; tp += t.protein; }
+    }
+    rows = '<div class="stat-row"><span>记录天数</span><b>' + rec + ' 天</b></div>' +
+           '<div class="stat-row"><span>热量累计</span><b>' + Math.round(tk) + ' kcal</b></div>' +
+           '<div class="stat-row"><span>日均热量</span><b>' + (rec ? Math.round(tk/rec) : 0) + ' kcal</b></div>' +
+           '<div class="stat-row"><span>蛋白累计</span><b>' + Math.round(tp) + ' g</b></div>';
+  }else if(mode === 'period'){
+    var pd = 0, inMonth = 0;
+    for(var d4=1; d4<=days; d4++){
+      var ds4 = y + '-' + pad2(m+1) + '-' + pad2(d4);
+      if(isPeriodDay(ds4)) pd++;
+      var pc4 = periodCalc(ds4);
+      if(pc4) inMonth++;
+    }
+    var ti = periodCalc(ymd(today()));
+    rows = '<div class="stat-row"><span>经期天数</span><b>' + pd + ' 天</b></div>' +
+           '<div class="stat-row"><span>本月记录</span><b>' + inMonth + ' 天可推算</b></div>' +
+           '<div class="stat-row"><span>周期长度</span><b>' + cycleLen() + ' 天</b></div>' +
+           (ti ? '<div class="stat-row"><span>距下次</span><b>' + ti.daysToNext + ' 天</b></div>' : '');
+  }else{
+    var tm = 0, rc = 0;
+    for(var d3=1; d3<=days; d3++){
+      var ds3 = y + '-' + pad2(m+1) + '-' + pad2(d3);
+      if(hasRecord('study', ds3)){ rc++; tm += studySummary(ds3).minutes; }
+    }
+    rows = '<div class="stat-row"><span>学习天数</span><b>' + rc + ' 天</b></div>' +
+           '<div class="stat-row"><span>时长累计</span><b>' + Math.round(tm) + ' min</b></div>' +
+           '<div class="stat-row"><span>日均时长</span><b>' + (rc ? Math.round(tm/rc) : 0) + ' min</b></div>';
+  }
+  $('monthStat').innerHTML = '<div class="stat-title">' + (m+1) + ' 月' + MODES[mode].name + '概览</div>' + rows;
+}
+
+/* ---- 本周概览：选中日期所在周的周一 ~ 周日 ---- */
+function weekRangeOf(d){
+  var wd = d.getDay();                     // 0 = 周日
+  var back = (wd === 0 ? 6 : wd - 1);      // 以周一为一周起点
+  var mon = addDays(d, -back);
+  return { mon: mon, sun: addDays(mon, 6) };
+}
+/* 找某日期附近（±3 天内）的体重记录 */
+function weightNear(ds){
+  var best = null, bestGap = 999;
+  data.weights.forEach(function(w){
+    var g = Math.abs(diffDays(w.date, ds));
+    if(g <= 3 && g < bestGap){ bestGap = g; best = w; }
+  });
+  return best;
+}
+function renderWeekStat(){
+  var r = weekRangeOf(selected);
+  var mds = ymd(r.mon), sds = ymd(r.sun);
+  var rows = '', i, ds, s, t;
+  if(mode === 'fitness'){
+    var days = 0, sm = 0, cm = 0, kcal = 0;
+    for(i = 0; i < 7; i++){
+      ds = ymd(addDays(r.mon, i));
+      if(hasRecord('fitness', ds)) days++;
+      s = fitSummary(ds); sm += s.strengthMin; cm += s.cardioMin; kcal += s.kcal;
+    }
+    rows = '<div class="stat-row"><span>训练天数</span><b>' + days + ' 天</b></div>' +
+           '<div class="stat-row"><span>无氧总时长</span><b>' + Math.round(sm) + ' min</b></div>' +
+           '<div class="stat-row"><span>有氧总时长</span><b>' + Math.round(cm) + ' min</b></div>' +
+           '<div class="stat-row"><span>总消耗</span><b>' + kcal + ' kcal</b></div>';
+  }else if(mode === 'diet'){
+    var rec = 0, tk = 0, tp = 0;
+    for(i = 0; i < 7; i++){
+      ds = ymd(addDays(r.mon, i));
+      if(hasRecord('diet', ds)){ rec++; t = dietSummary(ds); tk += t.kcal; tp += t.protein; }
+    }
+    rows = '<div class="stat-row"><span>记录天数</span><b>' + rec + ' 天</b></div>' +
+           '<div class="stat-row"><span>日均卡路里</span><b>' + (rec ? Math.round(tk / rec) : 0) + ' kcal</b></div>' +
+           '<div class="stat-row"><span>日均蛋白质</span><b>' + (rec ? Math.round(tp / rec) : 0) + ' g</b></div>';
+  }else if(mode === 'study'){
+    var sd = 0, tm = 0;
+    for(i = 0; i < 7; i++){
+      ds = ymd(addDays(r.mon, i));
+      if(hasRecord('study', ds)){ sd++; tm += studySummary(ds).minutes; }
+    }
+    rows = '<div class="stat-row"><span>学习天数</span><b>' + sd + ' 天</b></div>' +
+           '<div class="stat-row"><span>学习总时长</span><b>' + Math.round(tm) + ' min</b></div>' +
+           '<div class="stat-row"><span>日均时长</span><b>' + (sd ? Math.round(tm / sd) : 0) + ' min</b></div>';
+  }else{
+    var pd = 0;
+    for(i = 0; i < 7; i++){ ds = ymd(addDays(r.mon, i)); if(isPeriodDay(ds)) pd++; }
+    rows = '<div class="stat-row"><span>经期天数</span><b>' + pd + ' 天</b></div>';
+  }
+  // 体重：周一 vs 周日
+  var wm = weightNear(mds), ws = weightNear(sds);
+  var wtxt = '<span style="color:var(--muted)">—</span>';
+  if(wm && ws){
+    var dv = Math.round((ws.kg - wm.kg) * 10) / 10;
+    wtxt = dv > 0 ? '<span style="color:#E8453C">↑ +' + dv + ' kg</span>'
+         : (dv < 0 ? '<span style="color:#2FA84F">↓ ' + Math.abs(dv) + ' kg</span>'
+                   : '<span style="color:var(--muted)">持平 0 kg</span>');
+  }
+  rows += '<div class="stat-row"><span>体重 周一→周日</span><b style="font-size:13px">' + wtxt + '</b></div>';
+  $('weekStat').innerHTML = '<div class="stat-title">本周概览 ' + mds.slice(5) + ' ~ ' + sds.slice(5) + '</div>' + rows;
+}
+
+function renderLegend(){
+  var tips = {
+    fitness:'圆点 = 当天有训练记录<br>月视图格子显示 <b>无氧 / 有氧时长</b>',
+    diet:'圆点 = 当天有饮食记录<br>月视图格子显示 <b>当日总卡路里</b>（💧=有饮水）',
+    study:'圆点 = 当天有学习记录<br>月视图格子显示 <b>当日学习总时长</b>',
+    period:'底色 = 当天所处阶段<br><b style="color:#E8453C">红=经期</b> · <b style="color:#2FA84F">绿=卵泡期</b> · ' +
+           '<b style="color:#A05CD6">紫=易孕期</b> · <b style="color:#F5A623">橙=黄体期</b><br>红虚线框 = 预测的下次月经'
+  };
+  $('legend').innerHTML = tips[mode];
+}
+
+/* =====================================================================
+ *  全局渲染与事件
+ * ===================================================================== */
+function renderAll(){
+  document.body.setAttribute('data-mode', mode);
+  renderCalendar();
+  renderDetail();
+  renderMonthStat();
+  renderWeekStat();
+  renderLegend();
+}
+/* 视图切换 */
+$('viewSeg').addEventListener('click', function(e){
+  var b = e.target.closest('button'); if(!b) return;
+  view = b.getAttribute('data-view');
+  if(view === 'day') cursor = new Date(selected.getTime());
+  else if(view === 'month') cursor = new Date(selected.getFullYear(), selected.getMonth(), 1);
+  else cursor = new Date(selected.getFullYear(), 0, 1);
+  renderAll();
+});
+/* 模式切换（互斥） */
+$('modeBtns').addEventListener('click', function(e){
+  var b = e.target.closest('button'); if(!b) return;
+  var m = b.getAttribute('data-mode');
+  if(m === mode) return;
+  mode = m;
+  var btns = $('modeBtns').children;
+  for(var i=0;i<btns.length;i++) btns[i].classList.toggle('on', btns[i].getAttribute('data-mode') === mode);
+  renderAll();
+  toast('已切换到「' + MODES[mode].name + '」模式', 'ok');
+});
+/* 上一个 / 下一个周期 */
+$('prevBtn').addEventListener('click', function(){ step(-1); });
+$('nextBtn').addEventListener('click', function(){ step(1); });
+function step(dir){
+  if(view === 'year')       cursor = new Date(cursor.getFullYear() + dir, 0, 1);
+  else if(view === 'month') cursor = addMonths(cursor, dir);
+  else{
+    cursor = addDays(cursor, dir);
+    selected = new Date(cursor.getTime());
+  }
+  renderAll();
+}
+$('btnToday').addEventListener('click', function(){
+  selected = today();
+  cursor = new Date(selected.getTime());
+  if(view === 'month') cursor = new Date(selected.getFullYear(), selected.getMonth(), 1);
+  if(view === 'year')  cursor = new Date(selected.getFullYear(), 0, 1);
+  renderAll();
+  toast('已回到今天');
+});
+/* 窗口尺寸变化时重绘图表 */
+var resizeTimer = null;
+window.addEventListener('resize', function(){
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function(){ drawChart(); }, 120);
+});
+
+/* =====================================================================
+ *  设置：导出 / 导入 / 默认组歇 / 清空
+ * ===================================================================== */
+$('btnSettings').addEventListener('click', function(){
+  showForm({
+    title:'设置',
+    okText:'保存',
+    fields:[
+      { key:'restSeconds', label:'默认组间休息（秒）', type:'number', min:5, step:5 },
+      { key:'waterGoal',   label:'每日饮水目标（ml）', type:'number', min:1, step:100 },
+      { key:'_tip', label:'数据备份说明', ph:'导出为 JSON 文件，可随时导入恢复' }
+    ],
+    values:{ restSeconds: data.settings.restSeconds, waterGoal: waterGoal(), _tip:'' },
+    onOk:function(v){
+      data.settings.restSeconds = Math.max(5, Math.round(num(v.restSeconds) || 60));
+      data.settings.waterGoal = Math.max(1, Math.round(num(v.waterGoal) || 2000));
+      save(); renderDetail();
+      toast('设置已保存', 'ok');
+    }
+  });
+});
+/* 导出全部数据为 JSON */
+$('btnExport').addEventListener('click', function(){
+  try{
+    var payload = { app:'fitness-diet-study-calendar', version:1, exportedAt:new Date().toISOString(), data:data };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = '记录备份-' + ymd(today()) + '.json';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1500);
+    toast('已导出 JSON 备份', 'ok');
+  }catch(e){
+    toast('导出失败：' + e.message, 'err');
+  }
+});
+/* 导入 JSON 备份（覆盖当前数据） */
+$('btnImport').addEventListener('click', function(){ $('fileInput').click(); });
+$('fileInput').addEventListener('change', function(e){
+  var f = e.target.files && e.target.files[0];
+  if(!f) return;
+  var reader = new FileReader();
+  reader.onload = function(){
+    try{
+      var obj = JSON.parse(reader.result);
+      var d = obj && obj.data ? obj.data : obj;
+      if(!d || typeof d !== 'object') throw new Error('文件格式不正确');
+      confirmBox('导入将覆盖当前所有数据，确定继续吗？', function(){
+        data = {
+          fitness: d.fitness || {},
+          diet:    d.diet    || {},
+          study:   d.study   || {},
+          period: {
+            records: (d.period && Array.isArray(d.period.records)) ? d.period.records : [],
+            settings: Object.assign({ cycleLen:28, periodLen:5 }, (d.period && d.period.settings) || {})
+          },
+          water: (d.water && typeof d.water === 'object') ? d.water : {},
+          favFoods: Array.isArray(d.favFoods) ? d.favFoods : [],
+          favExercises: Array.isArray(d.favExercises) ? d.favExercises : [],
+          favCardio: Array.isArray(d.favCardio) ? d.favCardio : [],
+          weights: Array.isArray(d.weights) ? d.weights : [],
+          settings: Object.assign({ restSeconds:60, chartRange:'all', waterGoal:2000,
+            goals:{ kcal:1500, carb:150, fat:50, protein:100 } }, d.settings || {})
+        };
+        data.settings.goals = Object.assign({ kcal:1500, carb:150, fat:50, protein:100 }, (d.settings && d.settings.goals) || {});
+        save(); renderAll();
+        toast('已导入备份数据', 'ok');
+      });
+    }catch(err){
+      toast('导入失败：' + err.message, 'err');
+    }
+  };
+  reader.readAsText(f);
+  e.target.value = '';
+});
+
+/* =====================================================================
+ *  训练计划 导出 / 导入（仅健身计划，与全量备份相互独立）
+ * ===================================================================== */
+/* 从一个日期区间生成训练计划 JSON（只含计划内容，不含完成态/备注/饮食/经期/体重） */
+function exportTrainingPlan(startStr, endStr){
+  var d = parseYmd(startStr), e = parseYmd(endStr);
+  if(e < d){ var t = d; d = e; e = t; }              // 起止顺序容错
+  var days = [];
+  for(var cur = new Date(d.getTime()); cur <= e; cur = addDays(cur, 1)){
+    var ds = ymd(cur);
+    var fd = data.fitness[ds];
+    if(!fd) continue;
+    var hasPlan = (fd.strength && fd.strength.length) || (fd.cardio && fd.cardio.length) || (fd.parts && fd.parts.length);
+    if(!hasPlan) continue;                            // 无计划的日期不出现
+    var dayObj = { date: ds };
+    if(fd.parts && fd.parts.length) dayObj.parts = fd.parts.slice();
+    if(fd.strength && fd.strength.length){
+      dayObj.strength = fd.strength.map(function(it){
+        var o = { name: it.name };
+        o.sets = num(it.sets); o.reps = num(it.reps); o.weight = num(it.weight); o.restSec = num(it.rest);
+        return o;
+      });
+    }
+    if(fd.cardio && fd.cardio.length){
+      dayObj.cardio = fd.cardio.map(function(it){
+        var o = { name: it.type };
+        o.minutes = num(it.minutes); o.distance = num(it.distance); o.kcal = num(it.calories);
+        return o;
+      });
+    }
+    days.push(dayObj);
+  }
+  return { type:'training-plan', version:1, days: days };
+}
+/* 把导入的对象写入 data.fitness（mode: 'overwrite' | 'append'）；imported 的条目默认未开始 */
+function writeTrainingPlan(obj, mode){
+  var written = 0;
+  (obj.days || []).forEach(function(day){
+    var fd = data.fitness[day.date] || { strength:[], cardio:[], parts:[] };
+    if(!fd.strength) fd.strength = [];
+    if(!fd.cardio) fd.cardio = [];
+    if(!fd.parts) fd.parts = [];
+    var ns = (day.strength || []).map(function(it){
+      return {
+        id: uid(), name: it.name, sets: num(it.sets), reps: num(it.reps), weight: num(it.weight),
+        rest: num(it.restSec != null ? it.restSec : it.rest), minutes: '', note: '',
+        done: 0, startedAt: 0, finishedAt: 0, totalSec: 0, restEndAt: 0
+      };
+    });
+    var nc = (day.cardio || []).map(function(it){
+      return {
+        id: uid(), type: it.name, minutes: num(it.minutes), distance: num(it.distance),
+        calories: num(it.kcal != null ? it.kcal : it.calories), note: '', done: 0
+      };
+    });
+    var np = (day.parts || []).slice();
+    if(mode === 'overwrite'){
+      fd.strength = ns; fd.cardio = nc; fd.parts = np;
+    }else{
+      fd.strength = fd.strength.concat(ns);
+      fd.cardio = fd.cardio.concat(nc);
+      np.forEach(function(p){ if(fd.parts.indexOf(p) < 0) fd.parts.push(p); });
+    }
+    data.fitness[day.date] = fd;
+    written++;
+  });
+  save(); renderAll();
+  toast('已导入 ' + written + ' 天训练计划（默认未开始）', 'ok');
+}
+/* 校验并解析训练计划 JSON，返回对象；出错抛异常 */
+function parseTrainingPlan(text){
+  var obj;
+  try{ obj = JSON.parse(text); }
+  catch(err){ throw new Error('JSON 解析失败：' + err.message); }
+  if(!obj || typeof obj !== 'object') throw new Error('内容不是有效的 JSON 对象');
+  if(obj.type !== 'training-plan') throw new Error('type 必须为 "training-plan"，这是训练计划文件才能导入');
+  if(!Array.isArray(obj.days)) throw new Error('缺少 days 数组，无法导入');
+  obj.days.forEach(function(day, i){
+    if(!day || typeof day !== 'object') throw new Error('第 ' + (i+1) + ' 天不是对象');
+    if(!day.date || !/^\d{4}-\d{2}-\d{2}$/.test(day.date)) throw new Error('第 ' + (i+1) + ' 天 date 缺失或格式应为 YYYY-MM-DD');
+  });
+  return obj;
+}
+/* 导出训练计划弹窗 */
+function openExportPlanModal(){
+  $('modalTitle').textContent = '导出训练计划';
+  $('modalMsg').hidden = true;
+  var body = $('modalBody');
+  body.hidden = false;
+  var end = today(), start = addDays(end, -6);
+  body.innerHTML =
+    '<div class="plan-modal">' +
+      '<div class="row2"><label>开始</label><input type="date" id="planStart" value="' + ymd(start) + '"></div>' +
+      '<div class="row2"><label>结束</label><input type="date" id="planEnd" value="' + ymd(end) + '"></div>' +
+      '<div class="hint">仅导出区间内含健身计划（动作 / 有氧 / 训练部位）的日期，无计划的自动跳过；不含饮食、经期、体重及完成状态。</div>' +
+      '<div class="modal-actions"><button class="btn primary" id="planGen">生成 JSON</button>' +
+        '<button class="btn" id="planClose">关闭</button></div>' +
+      '<textarea id="planOut" class="plan-json" readonly style="display:none"></textarea>' +
+      '<div class="modal-actions" id="planCopyRow" style="display:none">' +
+        '<button class="btn" id="planCopy">复制</button>' +
+        '<span class="hint" style="margin:0;padding:0;background:none;border:none">点文本框可选中，按钮复制到剪贴板</span></div>' +
+    '</div>';
+  $('modalCancel').hidden = true; $('modalOk').hidden = true;
+  openModal();
+  body.querySelector('#planGen').onclick = function(){
+    var s = body.querySelector('#planStart').value, e = body.querySelector('#planEnd').value;
+    if(!s || !e){ toast('请选择开始和结束日期', 'warn'); return; }
+    var json = exportTrainingPlan(s, e);
+    var out = body.querySelector('#planOut');
+    out.value = JSON.stringify(json, null, 2);
+    out.style.display = 'block';
+    body.querySelector('#planCopyRow').style.display = 'flex';
+    toast('已生成 ' + json.days.length + ' 天计划', 'ok');
+  };
+  body.querySelector('#planClose').onclick = closeModal;
+  body.querySelector('#planCopy').onclick = function(){
+    var out = body.querySelector('#planOut');
+    out.focus(); out.select();
+    var ok = false;
+    try{ ok = document.execCommand('copy'); }catch(err){ ok = false; }
+    if(!ok && navigator.clipboard){ navigator.clipboard.writeText(out.value).catch(function(){}); }
+    toast('已复制到剪贴板', 'ok');
+  };
+}
+/* 导入训练计划弹窗 */
+function openImportPlanModal(){
+  $('modalTitle').textContent = '导入训练计划';
+  $('modalMsg').hidden = true;
+  var body = $('modalBody');
+  body.hidden = false;
+  body.innerHTML =
+    '<div class="plan-modal">' +
+      '<div class="hint">粘贴之前导出的训练计划 JSON（type 必须为 "training-plan"）。导入后计划默认「未开始」，当天训练时再走组间流程标记完成。</div>' +
+      '<textarea id="planIn" class="plan-json" placeholder="在此粘贴训练计划 JSON…" style="display:block;height:200px"></textarea>' +
+      '<div class="modal-actions"><button class="btn primary" id="planDoImport">导入</button>' +
+        '<button class="btn" id="planClose2">关闭</button></div>' +
+    '</div>';
+  $('modalCancel').hidden = true; $('modalOk').hidden = true;
+  openModal();
+  body.querySelector('#planDoImport').onclick = function(){
+    var text = body.querySelector('#planIn').value.trim();
+    if(!text){ toast('请粘贴 JSON 内容', 'warn'); return; }
+    var obj;
+    try{ obj = parseTrainingPlan(text); }
+    catch(err){ toast('导入失败：' + err.message, 'err'); return; }
+    // 检测冲突（目标日期已有计划）
+    var conflicts = [];
+    obj.days.forEach(function(day){
+      var fd = data.fitness[day.date];
+      if(fd && ((fd.strength && fd.strength.length) || (fd.cardio && fd.cardio.length) || (fd.parts && fd.parts.length))) conflicts.push(day.date);
+    });
+    if(conflicts.length){
+      confirm3('以下日期已有计划：' + conflicts.join('、') + '。\n请选择：覆盖（清空该日原有计划后写入）或 追加（保留原有并加入导入的）。',
+        function(){ writeTrainingPlan(obj, 'overwrite'); closeModal(); },
+        function(){ writeTrainingPlan(obj, 'append'); closeModal(); });
+    }else{
+      writeTrainingPlan(obj, 'overwrite');
+      closeModal();
+    }
+  };
+  body.querySelector('#planClose2').onclick = closeModal;
+}
+/* 三选项确认弹窗：覆盖 / 追加 / 取消 */
+function confirm3(msg, onOverwrite, onAppend){
+  $('modalTitle').textContent = '导入冲突';
+  $('modalMsg').hidden = true;
+  var body = $('modalBody');
+  body.hidden = false;
+  body.innerHTML = '<div class="modal-msg-inline">' + esc(msg).replace(/\n/g, '<br>') + '</div>' +
+    '<div class="modal-actions">' +
+      '<button class="btn" id="c3cancel">取消</button>' +
+      '<button class="btn" id="c3append">追加</button>' +
+      '<button class="btn primary" id="c3over">覆盖</button>' +
+    '</div>';
+  $('modalCancel').hidden = true; $('modalOk').hidden = true;
+  openModal();
+  body.querySelector('#c3cancel').onclick = closeModal;
+  body.querySelector('#c3append').onclick = function(){ closeModal(); onAppend(); };
+  body.querySelector('#c3over').onclick = function(){ closeModal(); onOverwrite(); };
+}
+$('btnExportPlan').addEventListener('click', openExportPlanModal);
+$('btnImportPlan').addEventListener('click', openImportPlanModal);
+
+/* =====================================================================
+ *  启动
+ * ===================================================================== */
+renderAll();
+</script>
+<script>
+if('serviceWorker' in navigator && location.protocol.indexOf('http') === 0){
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('./sw.js').catch(function(e){ console.warn('SW 注册失败:', e); });
+  });
+}
+</script>
+<script>
+if('serviceWorker' in navigator && location.protocol.indexOf('http') === 0){
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('./sw.js').catch(function(e){ console.warn('SW 注册失败:', e); });
+  });
+}
+</script>
+</body>
+</html>
